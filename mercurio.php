@@ -1,42 +1,82 @@
 <?php
 
-// use PHPMailer\PHPMailer\PHPMailer;
-
-// use PHPMailer\PHPMailer\PHPMailer;
-
 use PHPMailer\PHPMailer\PHPMailer;
 
 require 'libr/src/PHPMailer.php';
-require ('libr/src/Exception.php');
-require ('libr/src/SMTP.php');
+require 'libr/src/Exception.php';
+require 'libr/src/SMTP.php';
+require 'dados.php';
 
+$dados = new Dados();
+$diasSemana=[
+    'Segunda' => 1,
+    'Terca' => 2,
+    'Quarta' => 3,
+    'Quinta' => 4,
+    'Sexta' => 5,
+    'Sabado' => 6,
+    'Domingo' => 7,
+];
 
-$correio = new PHPMailer();
-$correio->isSMTP();
-$correio->SMTPDebug = 2;
-$correio->Host = 'smtp.comunhaoespirita.com';
-$correio->SMTPAuth = true;
-$correio->SMTPSecure = 'tls';
-$correio->Username = 'ati@comunhaoespirita.com';
-$correio->Password = ' ';
-$correio->Port = 587;
+$hoje = date('N');
 
-$correio->setFrom('ati@comunhaoespirita.com');
-//$correio->addReplyTo('no-reply@email.com.br');
-// $correio->addAddress('email@email.com.br', ‘Nome’);
-$correio->addAddress('ati.comunhao@gmail.com', 'Mercurio');
-// $correio->addCC('email@email.com.br', 'Cópia');
-// $correio->addBCC('email@email.com.br', 'Cópia Oculta')
+if($hoje < $diasSemana['Sabado']){
+    $dados->mensagemLucas();
+    enviaMensagem($dados);
+    $dados->mensagemBreno();
+    enviaMensagem($dados);
+}
 
-$correio->isHTML(true);
-$correio->Subject = 'Teste Mercurio Assunto';
-$correio->Body    = 'Este é o conteúdo da mensagem em <b>HTML!</b>';
-$correio->AltBody = 'Teste altBody';
-// $correio->addAttachment('/tmp/image.jpg', 'nome.jpg');
+if($hoje == $diasSemana['Segunda']){
+    $dados->mensagemLucas();
+    enviaMensagem($dados);
+}elseif($hoje == $diasSemana['Terca']){
+    $dados->mensagemLucas();
+    enviaMensagem($dados);
+}elseif($hoje == $diasSemana['Quarta']){
+    $dados->coletaDoacaoAlmox();
+    enviaMensagem($dados);
+}elseif($hoje == $diasSemana['Quinta']){
+    $dados->mensagemLucas();
+    enviaMensagem($dados);
+}elseif($hoje == $diasSemana['Sexta']){
+    $dados->mensagemReuniaoATI();
+    enviaMensagem($dados);
+}elseif($hoje == $diasSemana['Sabado']){
+    $dados->mensagemLucas();
+    enviaMensagem($dados);
+}elseif($hoje == $diasSemana['Domingo']){
+    $dados->mensagemLucas();
+    enviaMensagem($dados);
+}
 
-if(!$correio->send()) {
-    echo 'Não foi possível enviar a mensagem.<br>';
-    echo 'Erro: ' . $correio->ErrorInfo;
-} else {
-    echo 'Mensagem enviada.';
+function enviaMensagem($dados){
+    $correio = new PHPMailer();
+
+    $correio->isSMTP();
+    $correio->SMTPAuth = true;
+    $correio->Host = $dados->getField('host');
+    $correio->Username = $dados->getField('usuario');
+    $correio->Password = $dados->getField('senha');
+    $correio->Port = $dados->getField('porta');
+
+    $correio->setFrom ($dados->getField('remetente'), $dados->getField('nomeRemetente'));
+    // $correio->addReplyTo('no-reply@email.com.br');
+    // $correio->addAddress('email@email.com.br', ‘Nome’);
+    $correio->addAddress($dados->getField('destinatario'), $dados->getField('nomeDestinatario'));
+    // $correio->addCC('email@email.com.br', 'Cópia');
+    // $correio->addBCC('email@email.com.br', 'Cópia Oculta')
+
+    $correio->isHTML(true);
+    $correio->Subject = $dados->getField('assunto');
+    $correio->Body    = $dados->getField('mensagem');
+    $correio->AltBody = $dados->getField('mensagemAlt');
+    // $correio->addAttachment('/tmp/image.jpg', 'nome.jpg');
+
+    if(!$correio->send()) {
+        echo 'Não foi possível enviar a mensagem.<br>';
+        echo 'Erro: ' . $correio->ErrorInfo;
+    } else {
+        echo 'Mensagem enviada.';
+    }
 }
