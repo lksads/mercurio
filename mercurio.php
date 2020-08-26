@@ -37,10 +37,16 @@ if($hoje == $diasSemana['Segunda']){
     $dados->coletaDoacaoAlmox();
     enviaMensagem($dados);
 }elseif($hoje == $diasSemana['Quinta']){
-    $dados->mensagemLucas();
+    $dados->bancoDoBrasil();
+    enviaMensagem($dados);
+    $dados->arquivosAPD();
+    enviaMensagem($dados);
+    $dados->bancoShop9();
+    enviaMensagem($dados);
+    $dados->relogioDePonto();
     enviaMensagem($dados);
 }elseif($hoje == $diasSemana['Sexta']){
-    $dados->mensagemReuniaoATI();
+    $dados->reuniaoATI();
     enviaMensagem($dados);
 }elseif($hoje == $diasSemana['Sabado']){
     $dados->mensagemLucas();
