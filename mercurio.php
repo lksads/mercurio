@@ -28,7 +28,21 @@ if($hoje < $diasSemana['Sabado']){
 }
 
 if($hoje == $diasSemana['Segunda']){
-    $dados->mensagemLucas();
+    $dados->arquivosGerais();
+    enviaMensagem($dados);
+    $dados->IntranetCF();
+    enviaMensagem($dados);
+    $dados->IntranetBk();
+    enviaMensagem($dados);
+    $dados->comunhao21CF();
+    enviaMensagem($dados);
+    $dados->comunhao21BK();
+    enviaMensagem($dados);
+    $dados->bancoShop9Bs9();
+    enviaMensagem($dados);
+    $dados->bancoShop9BAK();
+    enviaMensagem($dados);
+    $dados->bancoShopIntranet();
     enviaMensagem($dados);
 }elseif($hoje == $diasSemana['Terca']){
     $dados->mensagemLucas();
@@ -47,6 +61,26 @@ if($hoje == $diasSemana['Segunda']){
     enviaMensagem($dados);
 }elseif($hoje == $diasSemana['Sexta']){
     $dados->reuniaoATI();
+    enviaMensagem($dados);
+    $dados->arquivosGerais();
+    enviaMensagem($dados);
+    $dados->serv01();
+    enviaMensagem($dados);
+    $dados->serv07();
+    enviaMensagem($dados);
+    $dados->pomadaCF();
+    enviaMensagem($dados);
+    $dados->pomadaBK();
+    enviaMensagem($dados);
+    $dados->comunhao21CF();
+    enviaMensagem($dados);
+    $dados->comunhao21BK();
+    enviaMensagem($dados);
+    $dados->bancoShop9Bs9();
+    enviaMensagem($dados);
+    $dados->bancoShop9BAK();
+    enviaMensagem($dados);
+    $dados->bancoShopIntranet();
     enviaMensagem($dados);
 }elseif($hoje == $diasSemana['Sabado']){
     $dados->mensagemLucas();
