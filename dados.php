@@ -30,7 +30,7 @@
             $this->setField('remetente','ati@comunhaoespirita.com');
             $this->setField('nomeRemetente',utf8_decode('ATI'));
 
-            $this->setField('assunto',utf8_decode('ATI - Planejamento diário'));
+            $this->setField('assunto',utf8_decode('LUCAS ALVES - Planejamento diário'));
             $this->setField('mensagem',utf8_decode('Consultar Agenda, Emails, Tickets e Whatsapp da ATI'));
             $this->setField('mensagemAlt',utf8_decode('Consultar Agenda, Emails, Tickets e Whatsapp da ATI'));            
         }
