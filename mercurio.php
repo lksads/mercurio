@@ -1,7 +1,5 @@
 <?php
 
-use PHPMailer\PHPMailer\PHPMailer;
-
 require 'libr/src/PHPMailer.php';
 require 'libr/src/Exception.php';
 require 'libr/src/SMTP.php';
@@ -21,102 +19,45 @@ $diasSemana=[
 $hoje = date('N');
 
 if($hoje < $diasSemana['Sabado']){
-    $dados->mensagemLucas();
-    enviaMensagem($dados);
-    $dados->mensagemBreno();
-    enviaMensagem($dados);
+    $dados->mensagemPrivada();
 }
 
 if($hoje == $diasSemana['Segunda']){
-    $dados->arquivosGerais();
-    enviaMensagem($dados);
-    $dados->IntranetCF();
-    enviaMensagem($dados);
-    $dados->IntranetBk();
-    enviaMensagem($dados);
-    $dados->comunhao21CF();
-    enviaMensagem($dados);
-    $dados->comunhao21BK();
-    enviaMensagem($dados);
-    $dados->bancoShop9Bs9();
-    enviaMensagem($dados);
-    $dados->bancoShop9BAK();
-    enviaMensagem($dados);
-    $dados->bancoShopIntranet();
-    enviaMensagem($dados);
+    $dados->segunda();
 }elseif($hoje == $diasSemana['Terca']){
-    $dados->mensagemLucas();
-    enviaMensagem($dados);
+    $dados->terca();
 }elseif($hoje == $diasSemana['Quarta']){
-    $dados->coletaDoacaoAlmox();
-    enviaMensagem($dados);
+    $dados->quarta();
 }elseif($hoje == $diasSemana['Quinta']){
-    $dados->bancoDoBrasil();
-    enviaMensagem($dados);
-    $dados->arquivosAPD();
-    enviaMensagem($dados);
-    $dados->bancoShop9();
-    enviaMensagem($dados);
-    $dados->relogioDePonto();
-    enviaMensagem($dados);
+    $dados->quinta();
 }elseif($hoje == $diasSemana['Sexta']){
-    $dados->reuniaoATI();
-    enviaMensagem($dados);
-    $dados->arquivosGerais();
-    enviaMensagem($dados);
-    $dados->serv01();
-    enviaMensagem($dados);
-    $dados->serv07();
-    enviaMensagem($dados);
-    $dados->pomadaCF();
-    enviaMensagem($dados);
-    $dados->pomadaBK();
-    enviaMensagem($dados);
-    $dados->comunhao21CF();
-    enviaMensagem($dados);
-    $dados->comunhao21BK();
-    enviaMensagem($dados);
-    $dados->bancoShop9Bs9();
-    enviaMensagem($dados);
-    $dados->bancoShop9BAK();
-    enviaMensagem($dados);
-    $dados->bancoShopIntranet();
-    enviaMensagem($dados);
+    $dados->sexta();
 }elseif($hoje == $diasSemana['Sabado']){
-    $dados->mensagemLucas();
-    enviaMensagem($dados);
+    $dados->sabado();
 }elseif($hoje == $diasSemana['Domingo']){
-    $dados->mensagemLucas();
-    enviaMensagem($dados);
+    $dados->domingo();
 }
 
-function enviaMensagem($dados){
-    $correio = new PHPMailer();
+#Valores referente a Mês
+$diaDoMes = date('j');
+$numeroMes = date('n');
 
-    $correio->isSMTP();
-    $correio->SMTPAuth = true;
-    $correio->Host = $dados->getField('host');
-    $correio->Username = $dados->getField('usuario');
-    $correio->Password = $dados->getField('senha');
-    $correio->Port = $dados->getField('porta');
+$nomeMes=[
+    'janeiro'=>1,
+    'fevereiro'=>2,
+    'marco'=>3,
+    'abril'=>4,
+    'maio'=>5,
+    'junho'=>6,
+    'julho'=>7,
+    'agosto'=>8,
+    'setembro'=>9,
+    'outubro'=>10,
+    'novembro'=>11,
+    'dezembro'=>12
+];
 
-    $correio->setFrom ($dados->getField('remetente'), $dados->getField('nomeRemetente'));
-    // $correio->addReplyTo('no-reply@email.com.br');
-    // $correio->addAddress('email@email.com.br', ‘Nome’);
-    $correio->addAddress($dados->getField('destinatario'), $dados->getField('nomeDestinatario'));
-    // $correio->addCC('email@email.com.br', 'Cópia');
-    // $correio->addBCC('email@email.com.br', 'Cópia Oculta')
-
-    $correio->isHTML(true);
-    $correio->Subject = $dados->getField('assunto');
-    $correio->Body    = $dados->getField('mensagem');
-    $correio->AltBody = $dados->getField('mensagemAlt');
-    // $correio->addAttachment('/tmp/image.jpg', 'nome.jpg');
-
-    if(!$correio->send()) {
-        echo 'Não foi possível enviar a mensagem.<br>';
-        echo 'Erro: ' . $correio->ErrorInfo;
-    } else {
-        echo 'Mensagem enviada.';
-    }
+if($diaDoMes == 1 && $numeroMes == $nomeMes['Janeiro']){
+    $dados->janeiro();
 }
+
