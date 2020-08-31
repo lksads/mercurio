@@ -345,5 +345,5 @@
             $this->arquivoGTV(); 
             $this->arquivoATI();
         }
-
-}      
+    }
+      
