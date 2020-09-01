@@ -195,21 +195,21 @@
         private function patrimonioBD(){
             $this->setField('mensagem',utf8_decode('BACKUP - Patrimonio Banco de Dados'));
             $this->setField('assunto',utf8_decode('CONFERIR-Patrimonio Banco de Dados'));
-            $this->setField('mensagemAlt',utf8_decode('CONFERIR-Backup-Patrimonio Codigo Fonte'));
+            $this->setField('mensagemAlt',utf8_decode('CONFERIR-Backup-Patrimonio Banco de Dados'));
             
             return $this->enviaMensagem();
         }
         private function patrimonioApache(){
-            $this->setField('mensagem',utf8_decode('BACKUP - Patrimonio Codigo Fonte'));
-            $this->setField('assunto',utf8_decode('CONFERIR-Patrimonio Backup-Codigo Fonte'));
-            $this->setField('mensagemAlt',utf8_decode('CONFERIR-Backup-Patrimonio Codigo Fonte'));
+            $this->setField('mensagem',utf8_decode('BACKUP - Patrimonio Apache'));
+            $this->setField('assunto',utf8_decode('CONFERIR-Patrimonio - Apache'));
+            $this->setField('mensagemAlt',utf8_decode('CONFERIR-Backup-Apache'));
             
             return $this->enviaMensagem();
         }
         private function arquivosGeraisServ06(){
             $this->setField('mensagem',utf8_decode('BACKUP - Patrimonio Geral Serv06'));
-            $this->setField('assunto',utf8_decode('CONFERIR-Patrimonio Backup-Codigo Fonte'));
-            $this->setField('mensagemAlt',utf8_decode('CONFERIR-Backup-Patrimonio Codigo Fonte'));    
+            $this->setField('assunto',utf8_decode('CONFERIR-Backup - Patrimonio Geral Serv06'));
+            $this->setField('mensagemAlt',utf8_decode('CONFERIR-Backup - Patrimonio Geral Serv06'));    
             
             return $this->enviaMensagem();
         }
