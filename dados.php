@@ -31,7 +31,7 @@
             $this->setField('usuario','ati@comunhaoespirita.com');
             $this->setField('senha','***');
             $this->setField('porta',587);
-            $this->setField('destinatario','ati@comunhaoespirita.com');
+            $this->setField('destinatario','ati.suporte@comunhaoespirita.com');
             $this->setField('nomeDestinatario',utf8_decode('ATI'));
             $this->setField('remetente','ati@comunhaoespirita.com');
             $this->setField('nomeRemetente',utf8_decode('ATI'));
@@ -144,9 +144,9 @@
             return $this->enviaMensagem();
         }
         private function pomadaBK(){
-            $this->setField('mensagem',utf8_decode('BACKUP - Pomada Banco de this'));
-            $this->setField('assunto',utf8_decode('CONFERIR-Backup-Pomada Banco de this - serv02'));
-            $this->setField('mensagemAlt',utf8_decode('CONFERIR-Backup-Pomada Banco de this - serv02'));  
+            $this->setField('mensagem',utf8_decode('BACKUP - Pomada Banco de Dados'));
+            $this->setField('assunto',utf8_decode('CONFERIR-Backup-Pomada Banco de Dados - serv02'));
+            $this->setField('mensagemAlt',utf8_decode('CONFERIR-Backup-Pomada Banco de Dados - serv02'));  
             
             return $this->enviaMensagem();
         }
@@ -160,7 +160,7 @@
         private function comunhao21BK(){
             $this->setField('mensagem',utf8_decode('BACKUP - Comunhao 21'));
             $this->setField('assunto',utf8_decode('CONFERIR-Backup-Comunhao 21 Banco de Dados - serv05'));
-            $this->setField('mensagemAlt',utf8_decode('CONFERIR-Backup-Comunhao 21 Banco de this - serv05')); 
+            $this->setField('mensagemAlt',utf8_decode('CONFERIR-Backup-Comunhao 21 Banco de Dados - serv05')); 
             
             return $this->enviaMensagem();
         }
