@@ -207,9 +207,9 @@
             return $this->enviaMensagem();
         }
         private function arquivosGeraisServ06(){
-            $this->setField('mensagem',utf8_decode('BACKUP - Patrimonio Geral Serv06'));
-            $this->setField('assunto',utf8_decode('CONFERIR-Backup - Patrimonio Geral Serv06'));
-            $this->setField('mensagemAlt',utf8_decode('CONFERIR-Backup - Patrimonio Geral Serv06'));    
+            $this->setField('mensagem',utf8_decode('BACKUP - Arquivos Gerais Serv06'));
+            $this->setField('assunto',utf8_decode('CONFERIR-Backup - Arquivos Gerais Serv06'));
+            $this->setField('mensagemAlt',utf8_decode('CONFERIR-Backup - Arquivos Gerais Serv06'));    
             
             return $this->enviaMensagem();
         }
@@ -310,40 +310,138 @@
         }
 
         #Criando Dados dos Meses
-        function imgSOServ00(){
+        private function imgSOServ00(){
             $this->setField('mensagem',utf8_decode('BACKUP - Imagem S.O - Ferramenta Windows - serv00'));
             $this->setField('assunto',utf8_decode('CONFERIR-Backup-Imagem S.O - Ferramenta Windows - serv00'));
             $this->setField('mensagemAlt',utf8_decode('CONFERIR-Backup-Imagem S.O - Ferramenta Windows - serv00'));    
             
             return $this->enviaMensagem();
         }
-        function imgActiveServ00(){
+        private function imgActiveServ00(){
             $this->setField('mensagem',utf8_decode('BACKUP - Imagem S.O - Active Boot - serv00'));
             $this->setField('assunto',utf8_decode('CONFERIR-Backup-Imagem S.O - Active Boot - serv00'));
             $this->setField('mensagemAlt',utf8_decode('CONFERIR-Backup-Imagem S.O - Active Boot - serv00'));    
             
             return $this->enviaMensagem();
         }
-        function arquivoGTV(){
-            $this->setField('mensagem',utf8_decode('BACKUP - Arquivo GTV - serv02'));
-            $this->setField('assunto',utf8_decode('CONFERIR-Backup-Arquivo GTV - serv02'));
-            $this->setField('mensagemAlt',utf8_decode('CONFERIR-Backup-Arquivo GTV - serv02'));    
+        private function arquivosGTV(){
+            $this->setField('mensagem',utf8_decode('BACKUP - Arquivos GTV - serv02'));
+            $this->setField('assunto',utf8_decode('CONFERIR-Backup-Arquivos GTV - serv02'));
+            $this->setField('mensagemAlt',utf8_decode('CONFERIR-Backup-Arquivos GTV - serv02'));    
             
             return $this->enviaMensagem();
         }
-        function arquivoATI(){
-            $this->setField('mensagem',utf8_decode('BACKUP - Arquivo ATI - serv02'));
-            $this->setField('assunto',utf8_decode('CONFERIR-Arquivo ATI - serv02'));
-            $this->setField('mensagemAlt',utf8_decode('CONFERIR-Backup-Arquivo ATI - serv02'));    
+        private function arquivosATI(){
+            $this->setField('mensagem',utf8_decode('BACKUP - Arquivos ATI - serv02'));
+            $this->setField('assunto',utf8_decode('CONFERIR-Arquivos ATI - serv02'));
+            $this->setField('mensagemAlt',utf8_decode('CONFERIR-Backup-Arquivos ATI - serv02'));    
             
             return $this->enviaMensagem();
         }
-
+        private function imgSOServ06(){
+            $this->setField('mensagem',utf8_decode('BACKUP - Imagem S.O - Ferramenta Windows - serv06'));
+            $this->setField('assunto',utf8_decode('CONFERIR-Backup-Imagem S.O - Ferramenta Windows - serv06'));
+            $this->setField('mensagemAlt',utf8_decode('CONFERIR-Backup-Imagem S.O - Ferramenta Windows - serv06'));    
+            
+            return $this->enviaMensagem();
+        }
+        private function imgActiveServ06(){
+            $this->setField('mensagem',utf8_decode('BACKUP - Imagem S.O - Active Boot - serv06'));
+            $this->setField('assunto',utf8_decode('CONFERIR-Backup-Imagem S.O - Active Boot - serv06'));
+            $this->setField('mensagemAlt',utf8_decode('CONFERIR-Backup-Imagem S.O - Active Boot - serv06'));    
+            
+            return $this->enviaMensagem();
+        }
+        private function imgAcronisServ02(){
+            $this->setField('mensagem',utf8_decode('BACKUP - Imagem S.O - Acronis - serv02'));
+            $this->setField('assunto',utf8_decode('CONFERIR-Backup-Imagem S.O - Acronis - serv02'));
+            $this->setField('mensagemAlt',utf8_decode('CONFERIR-Backup-Imagem S.O - Acronis - serv02'));    
+            
+            return $this->enviaMensagem();
+        }
+        private function imgAcronisServ03(){
+            $this->setField('mensagem',utf8_decode('BACKUP - Imagem S.O - Acronis - serv03'));
+            $this->setField('assunto',utf8_decode('CONFERIR-Backup-Imagem S.O - Acronis - serv03'));
+            $this->setField('mensagemAlt',utf8_decode('CONFERIR-Backup-Imagem S.O - Acronis - serv03'));    
+            
+            return $this->enviaMensagem();
+        }
+        private function imgAcronisServ05(){
+            $this->setField('mensagem',utf8_decode('BACKUP - Imagem S.O - Acronis - serv05'));
+            $this->setField('assunto',utf8_decode('CONFERIR-Backup-Imagem S.O - Acronis - serv05'));
+            $this->setField('mensagemAlt',utf8_decode('CONFERIR-Backup-Imagem S.O - Acronis - serv05'));    
+            
+            return $this->enviaMensagem();
+        }
+        
         function janeiro(){
             $this->imgSOServ00();
             $this->imgActiveServ00();
-            $this->arquivoGTV(); 
-            $this->arquivoATI();
+            $this->arquivosGTV(); 
+            $this->arquivosATI();
+        }
+        function fevereiro(){
+            $this->imgActiveServ06();
+            $this->imgSOServ06();
+            $this->arquivosGTV();
+            $this->arquivosATI();
+        }
+        function marco(){
+            $this->imgAcronisServ05();
+            $this->imgAcronisServ03();
+            $this->arquivosGTV();
+            $this->arquivosATI();
+        }
+        function abril(){
+            $this->imgAcronisServ02();
+            $this->arquivosGTV();
+            $this->arquivosATI();
+        }
+        function maio(){
+            $this->imgSOServ00();
+            $this->imgActiveServ00();
+            $this->arquivosGTV(); 
+            $this->arquivosATI();   
+        }
+        function junho(){
+            $this->imgActiveServ06();
+            $this->imgSOServ06();
+            $this->arquivosGTV();
+            $this->arquivosATI();
+        }
+        function julho(){
+            $this->imgAcronisServ05();
+            $this->imgAcronisServ03();
+            $this->arquivosGTV();
+            $this->arquivosATI();
+        }
+        function agosto(){
+            $this->imgAcronisServ02();
+            $this->arquivosGTV();
+            $this->arquivosATI();
+        }
+        function setembro(){
+            $this->imgSOServ00();
+            $this->imgActiveServ00();
+            $this->arquivosGTV(); 
+            $this->arquivosATI();
+        }
+        function outubro(){
+            $this->imgActiveServ06();
+            $this->imgSOServ06();
+            $this->arquivosGTV();
+            $this->arquivosATI();
+        }
+        function novembro(){
+            $this->imgAcronisServ05();
+            $this->imgAcronisServ03();
+            $this->arquivosGTV();
+            $this->arquivosATI();
+        }
+        function dezembro(){
+            $this->imgAcronisServ02();
+            $this->arquivosGTV();
+            $this->arquivosATI();
         }
     }
       

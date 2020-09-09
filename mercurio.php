@@ -57,7 +57,29 @@ $nomeMes=[
     'dezembro'=>12
 ];
 
-if($diaDoMes == 1 && $numeroMes == $nomeMes['Janeiro']){
+if($diaDoMes == 1 && $numeroMes == $nomeMes['janeiro']){
     $dados->janeiro();
+}elseif($diaDoMes ==  2 && $numeroMes == $nomeMes['fevereiro']){
+    $dados->fevereiro();
+}elseif($diaDoMes ==  3 && $numeroMes == $nomeMes['marco']){
+    $dados->marco();
+}elseif($diaDoMes ==  4 && $numeroMes == $nomeMes['abril']){
+    $dados->abril();
+}elseif($diaDoMes ==  5 && $numeroMes == $nomeMes['maio']){
+    $dados->maio();
+}elseif($diaDoMes ==  6 && $numeroMes == $nomeMes['junho']){
+    $dados->junho();
+}elseif($diaDoMes ==  7 && $numeroMes == $nomeMes['julho']){
+    $dados->julho();
+}elseif($diaDoMes ==  8 && $numeroMes == $nomeMes['agosto']){
+    $dados->agosto();
+}elseif($diaDoMes ==  9 && $numeroMes == $nomeMes['setembro']){
+    $dados->setembro();
+}elseif($diaDoMes ==  10 && $numeroMes == $nomeMes['outubro']){
+    $dados->outubro();
+}elseif($diaDoMes ==  11 && $numeroMes == $nomeMes['novembro']){
+    $dados->novembro();
+}elseif($diaDoMes ==  12 && $numeroMes == $nomeMes['dezembro']){
+    $dados->dezembro();
 }
 
