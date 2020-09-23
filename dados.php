@@ -495,6 +495,7 @@
         }
 
         function quarta(){
+            $this->reuniaoATI();
             $this->pomadaCF();
             $this->pomadaBK();
             $this->intranetCF();
@@ -516,7 +517,6 @@
         }
 
         function sexta(){
-            $this->reuniaoATI();
             $this->arquivosGerais();
             $this->serv01();
             $this->serv07();
