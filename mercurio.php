@@ -5,7 +5,10 @@ require 'libr/src/Exception.php';
 require 'libr/src/SMTP.php';
 require 'dados.php';
 
-$dados = new Dados();
+$ambiente = 'Produção';
+// $ambiente = 'Desenvolvimento';
+
+$dados = new Dados($ambiente);
 $diasSemana=[
     'Segunda' => 1,
     'Terca' => 2,
