@@ -440,6 +440,14 @@
             return $this->enviaMensagem();
         }
 
+        private function relatorioATI(){
+            $this->setField('mensagem',utf8_decode('Relatorio ATI'));
+            $this->setField('assunto',utf8_decode('Gerar Relatorio da ATI'));
+            $this->setField('mensagemAlt',utf8_decode('Gerar Relatorio da ATI')); 
+            
+            return $this->enviaMensagem();
+        }
+
         function enviaMensagem(){
             $correio = new PHPMailer();
         
@@ -527,6 +535,10 @@
             $this->bancoShop9Bs9();
             $this->bancoShop9BAK();
             $this->bancoShopIntranet();
+        }
+
+        function relatorio(){
+            $this->relatorioATI();
         }
 
         function sabado(){

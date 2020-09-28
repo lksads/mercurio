@@ -86,3 +86,8 @@ if($diaDoMes == 1 && $numeroMes == $nomeMes['janeiro']){
     $dados->dezembro();
 }
 
+if($diaDoMes == 30){
+    $dados->relatorio();
+}elseif($diaDoMes == 28 && $numeroMes == $nomeMes['fevereiro']){
+    $dados->relatorio();
+}
