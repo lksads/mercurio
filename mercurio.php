@@ -9,7 +9,7 @@ $ambiente = 'Produção';
 // $ambiente = 'Desenvolvimento';
 
 $dados = new Dados($ambiente);
-$diasSemana=[
+$diasSemana = [
     'Segunda' => 1,
     'Terca' => 2,
     'Quarta' => 3,
@@ -46,48 +46,48 @@ $diaDoMes = date('j');
 $numeroMes = date('n');
 
 $nomeMes=[
-    'janeiro'=>1,
-    'fevereiro'=>2,
-    'marco'=>3,
-    'abril'=>4,
-    'maio'=>5,
-    'junho'=>6,
-    'julho'=>7,
-    'agosto'=>8,
-    'setembro'=>9,
-    'outubro'=>10,
-    'novembro'=>11,
-    'dezembro'=>12
+    'janeiro' => 1,
+    'fevereiro' => 2,
+    'marco' => 3,
+    'abril' => 4,
+    'maio' => 5,
+    'junho' => 6,
+    'julho' => 7,
+    'agosto' => 8,
+    'setembro' => 9,
+    'outubro' => 10,
+    'novembro' => 11,
+    'dezembro' => 12
 ];
 
-if($diaDoMes == 1 && $numeroMes == $nomeMes['janeiro']){
-    $dados->janeiro();
-}elseif($diaDoMes ==  2 && $numeroMes == $nomeMes['fevereiro']){
-    $dados->fevereiro();
-}elseif($diaDoMes ==  3 && $numeroMes == $nomeMes['marco']){
-    $dados->marco();
-}elseif($diaDoMes ==  4 && $numeroMes == $nomeMes['abril']){
-    $dados->abril();
-}elseif($diaDoMes ==  5 && $numeroMes == $nomeMes['maio']){
-    $dados->maio();
-}elseif($diaDoMes ==  6 && $numeroMes == $nomeMes['junho']){
-    $dados->junho();
-}elseif($diaDoMes ==  7 && $numeroMes == $nomeMes['julho']){
-    $dados->julho();
-}elseif($diaDoMes ==  8 && $numeroMes == $nomeMes['agosto']){
-    $dados->agosto();
-}elseif($diaDoMes ==  9 && $numeroMes == $nomeMes['setembro']){
-    $dados->setembro();
-}elseif($diaDoMes ==  10 && $numeroMes == $nomeMes['outubro']){
-    $dados->outubro();
-}elseif($diaDoMes ==  11 && $numeroMes == $nomeMes['novembro']){
-    $dados->novembro();
-}elseif($diaDoMes ==  12 && $numeroMes == $nomeMes['dezembro']){
-    $dados->dezembro();
-}
-
-if($diaDoMes == 30){
+if($diaDoMes == 1){
+    if($numeroMes == $nomeMes['janeiro']){
+        $dados->janeiro();
+    }elseif($numeroMes == $nomeMes['fevereiro']){
+        $dados->fevereiro();
+    }elseif($numeroMes == $nomeMes['marco']){
+        $dados->marco();
+    }elseif($numeroMes == $nomeMes['abril']){
+        $dados->abril();
+    }elseif($numeroMes == $nomeMes['maio']){
+        $dados->maio();
+    }elseif($numeroMes == $nomeMes['junho']){
+        $dados->junho();
+    }elseif($numeroMes == $nomeMes['julho']){
+        $dados->julho();
+    }elseif($numeroMes == $nomeMes['agosto']){
+        $dados->agosto();
+    }elseif($numeroMes == $nomeMes['setembro']){
+        $dados->setembro();
+    }elseif($numeroMes == $nomeMes['outubro']){
+        $dados->outubro();
+    }elseif($numeroMes == $nomeMes['novembro']){
+        $dados->novembro();
+    }elseif($numeroMes == $nomeMes['dezembro']){
+        $dados->dezembro();
+    }
+}elseif($diaDoMes == 30){
     $dados->relatorio();
-}elseif($diaDoMes == 28 && $numeroMes == $nomeMes['fevereiro']){
+}elseif(($numeroMes == $nomeMes['fevereiro']) && $diaDoMes == 28){
     $dados->relatorio();
 }
