@@ -1,2 +1,1 @@
-"C:\xampp\php\php.exe" -f "C:\xampp\htdocs\mercurio\mensagensAutomaticas.bat"
-pause
+"C:\php7\php.exe" -f "C:\comunhaoweb\mercurio\mercurio.php"
