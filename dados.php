@@ -38,9 +38,9 @@
             $this->senha = '***';
             $this->porta = 587;
             $this->destinatario = $this->email;
-            $this->nomeDestinatario = utf8_decode('ATI');
+            $this->nomeDestinatario = utf8_decode('ATI - Equipe');
             $this->remetente = 'ati@comunhaoespirita.com';
-            $this->nomeRemetente = utf8_decode('ATI');
+            $this->nomeRemetente = utf8_decode('Assessoria de Tecnologia da Informação - ATI');
         }
 
         private function mensagemLucas(){
@@ -74,7 +74,7 @@
             return $this->enviaMensagem();
         }
         private function bancoDoBrasil(){
-            $this->assunto = utf8_decode('CONFERIR BACKUP - Banco do Brasil - (comunhao-152)');
+            $this->assunto = utf8_decode('CONFERIR BACKUP - Banco do Brasil - (serv00)');
             $this->mensagem = utf8_decode('
                 <b>BACKUP:</b> Banco do Brasil - (comunhao-152)<br>
                 <b>Origem física:</b> comunhao-152<br>
@@ -85,7 +85,7 @@
                 <b>Início da rotina:</b> 13h30<br>
                 <b>Ferramenta:</b> Cobian Backup<br>
                 <b>Método:</b> Automático<br>
-                <b>Tempo aproximado de duração da rotina:</b> 5min<br>
+                <b>Tempo aproximado de duração da rotina:</b> 5m<br>
                 <b>Número de cópias mantidas:</b> 3<br>
                 <b>Frequência de conferência manual:</b> Semanalmente (Segunda, Quarta e Sexta)
             ');
@@ -107,7 +107,7 @@
                 <b>Início da rotina:</b> 23h59<br>
                 <b>Ferramenta:</b> Cobian Backup<br>
                 <b>Método:</b> Automático<br>
-                <b>Tempo aproximado de duração da rotina:</b> 3h<br>
+                <b>Tempo aproximado de duração da rotina:</b> 5h<br>
                 <b>Número de cópias mantidas:</b> 2<br>
                 <b>Frequência de conferência manual:</b> Diariamente
             ');
@@ -129,7 +129,7 @@
                 <b>Início da rotina:</b> 22h30<br>
                 <b>Ferramenta:</b> Cobian Backup<br>
                 <b>Método:</b> Automático<br>
-                <b>Tempo aproximado de duração da rotina:</b> 3h<br>
+                <b>Tempo aproximado de duração da rotina:</b> <12h<br>
                 <b>Número de cópias mantidas:</b> 1<br>
                 <b>Frequência de conferência manual:</b> Diariamente
             ');
@@ -151,7 +151,7 @@
                 <b>Início da rotina:</b> 23h50<br>
                 <b>Ferramenta:</b> Cobian Backup<br>
                 <b>Método:</b> Automático<br>
-                <b>Tempo aproximado de duração da rotina:</b><br>
+                <b>Tempo aproximado de duração da rotina:</b> <5m<br>
                 <b>Número de cópias mantidas:</b> 1<br>
                 <b>Frequência de conferência manual:</b> Diariamente
             ');
@@ -172,7 +172,7 @@
                 <b>Início da rotina:</b> 9h<br>
                 <b>Ferramenta:</b> Microsoft SQL Server Management Studio<br>
                 <b>Método:</b> Manual<br>
-                <b>Tempo aproximado de duração da rotina:</b> 5min<br>
+                <b>Tempo aproximado de duração da rotina:</b> 1m<br>
                 <b>Número de cópias mantidas:</b> 1<br>
                 <b>Frequência de conferência manual:</b> Semanalmente (Segunda, Quarta e Sexta)
             ');
@@ -214,7 +214,7 @@
                 <b>Início da rotina:</b> 23h30<br>
                 <b>Ferramenta:</b> Cobian Backup<br>
                 <b>Método:</b> Automático<br>
-                <b>Tempo aproximado de duração da rotina:</b> 5min<br>
+                <b>Tempo aproximado de duração da rotina:</b> 5m<br>
                 <b>Número de cópias mantidas:</b> 7<br>
                 <b>Frequência de conferência manual:</b> Diariamente
             ');
@@ -236,7 +236,7 @@
                 <b>Ferramenta:</b> dump_automatico_intranet.bat<br>
                 Caminho da <b>Ferramenta:</b> "C:\comunhaoweb\intranet\lib\dump_automatico_intranet.bat"<br>
                 <b>Método:</b> Automático<br>
-                <b>Tempo aproximado de duração da rotina:</b> 10min<br>
+                <b>Tempo aproximado de duração da rotina:</b> 10m<br>
                 <b>Número de cópias mantidas:</b> 3<br>
                 <b>Frequência de conferência manual:</b> Diariamente
             ');
@@ -245,7 +245,7 @@
             return $this->enviaMensagem();
         }
         private function serv01(){
-            $this->assunto = utf8_decode('CONFERIR BACKUP - Sophos - (serv01)');
+            $this->assunto = utf8_decode('CONFERIR BACKUP - Sophos - (serv02)');
             $this->mensagem = utf8_decode('
                 <b>BACKUP:</b> Sophos - (serv01)<br>
                 <b>Origem física:</b> Servidor (serv01)<br>
@@ -257,7 +257,7 @@
                 <b>Início da rotina:</b> 9h<br>
                 <b>Ferramenta:</b> Qualquer browser<br>
                 <b>Método:</b> Manual<br>
-                <b>Tempo aproximado de duração da rotina:</b> 2 minutos<br>
+                <b>Tempo aproximado de duração da rotina:</b> 2m<br>
                 <b>Número de cópias mantidas:</b> 1<br>
                 <b>Frequência de conferência manual:</b> 7 dias
             ');
@@ -266,7 +266,7 @@
             return $this->enviaMensagem();
         }
         private function serv07(){
-            $this->assunto = utf8_decode('CONFERIR BACKUP - Sophos - (serv07)');
+            $this->assunto = utf8_decode('CONFERIR BACKUP - Sophos - (serv02)');
             $this->mensagem = utf8_decode('
                 <b>BACKUP:</b> Sophos - (serv07)<br>
                 <b>Origem física:</b> Servidor (serv07)<br>
@@ -278,7 +278,7 @@
                 <b>Início da rotina:</b> 9h<br>
                 <b>Ferramenta:</b> Qualquer browser<br>
                 <b>Método:</b> Manual<br>
-                <b>Tempo aproximado de duração da rotina:</b> 2 minutos<br>
+                <b>Tempo aproximado de duração da rotina:</b> 2m<br>
                 <b>Número de cópias mantidas:</b> 1<br>
                 <b>Frequência de conferência manual:</b> 7 dias
             ');
@@ -299,7 +299,7 @@
                 <b>Início da rotina:</b> NÃO DEFINIDO<br>
                 <b>Ferramenta:</b> Pendrive<br>
                 <b>Método:</b> Manual<br>
-                <b>Tempo aproximado de duração da rotina:</b> 5min<br>
+                <b>Tempo aproximado de duração da rotina:</b> 5m<br>
                 <b>Número de cópias mantidas:</b> 3<br>
                 <b>Frequência de conferência manual:</b> Semanalmente (Terça e Quinta)
             ');
@@ -320,7 +320,7 @@
                 <b>Início da rotina:</b> NÃO DEFINIDO<br>
                 <b>Ferramenta:</b> Pendrive e MySQL Workbench<br>
                 <b>Método:</b> Manual<br>
-                <b>Tempo aproximado de duração da rotina:</b> 5min<br>
+                <b>Tempo aproximado de duração da rotina:</b> 5m<br>
                 <b>Número de cópias mantidas:</b> 3<br>
                 <b>Frequência de conferência manual:</b> Semanalmente ( Terça e Quinta )
             ');
@@ -352,7 +352,7 @@
                 Caminho da <b>Ferramenta:</b> "C:\comunhaoweb\intranet\DUMP_P21\pega_dump_serv05.bat"<br>
                 <b>Método:</b> AutomáticoProcedimentos para cópias de segurança (Backup) <br>
                 5 / 14<br>
-                <b>Tempo aproximado de duração da rotina:</b> 5min<br>
+                <b>Tempo aproximado de duração da rotina:</b> 5m<br>
                 <b>Número de cópias mantidas:</b> 3 (Exclusão Manual)<br>
                 <b>Frequência de conferência manual:</b> Diariamente
             ');
@@ -375,7 +375,7 @@
                 <b>Início da rotina:</b> 22h30<br>
                 <b>Ferramenta:</b> Ferramenta de Backup do Shop Control 9<br>
                 <b>Método:</b> Automático<br>
-                <b>Tempo aproximado de duração da rotina:</b> 10min<br>
+                <b>Tempo aproximado de duração da rotina:</b> 10m<br>
                 <b>Número de cópias mantidas:</b> 3<br>
                 <b>Frequência de conferência manual:</b> Diariamente
             ');
@@ -396,7 +396,7 @@
                 <b>Início da rotina:</b> 5h<br>
                 <b>Ferramenta:</b> Microsoft SQL Server Management Studio<br>
                 <b>Método:</b> Automático<br>
-                <b>Tempo aproximado de duração da rotina:</b> 5min<br>
+                <b>Tempo aproximado de duração da rotina:</b> 5m<br>
                 <b>Número de cópias mantidas:</b> 1<br>
                 <b>Frequência de conferência manual:</b> Diariamente
             ');
@@ -405,7 +405,7 @@
             return $this->enviaMensagem();
         }
         private function bancoShopIntranet(){
-            $this->assunto = utf8_decode('CONFERIR BACKUP - Banco Shop 9 Intranet - (serv03)');
+            $this->assunto = utf8_decode('CONFERIR BACKUP - Banco Shop 9 Intranet - (serv05)');
             $this->mensagem = utf8_decode('
                 <b>BACKUP:</b> Banco Shop 9 Intranet<br>
                 <b>Origem física:</b> Servidor (serv03)<br>
@@ -460,7 +460,7 @@
                 <b>Início da rotina:</b> 9h<br>
                 <b>Ferramenta:</b> MySQL Workbench<br>
                 <b>Método:</b> Manual<br>
-                <b>Tempo aproximado de duração da rotina:</b> 1 min<br>
+                <b>Tempo aproximado de duração da rotina:</b> 1m<br>
                 <b>Número de cópias mantidas:</b> 1<br>
                 <b>Frequência de conferência manual:</b> Semanalmente (Segunda, Quarta e Sexta)
             ');
@@ -528,7 +528,7 @@
             return $this->enviaMensagem();
         }
         private function imgActiveServ00(){
-            $this->assunto = utf8_decode('CONFERIR BACKUP - Imagem S.O "Active Boot" (serv00)');
+            $this->assunto = utf8_decode('CONFERIR BACKUP - Imagem S.O "Active Boot" (HD na ATI)');
             $this->mensagem = utf8_decode('
                 <b>BACKUP:</b> Imagem S.O "Active Boot" - (serv00)<br>
                 <b>Origem física:</b> Servidor (serv00)<br>
@@ -561,7 +561,7 @@
                 <b>Início da rotina:</b> 4h<br>
                 <b>Ferramenta:</b> Cobian Backup<br>
                 <b>Método:</b> Automático<br>
-                <b>Tempo aproximado de duração da rotina:</b> 25min<br>
+                <b>Tempo aproximado de duração da rotina:</b> 25m<br>
                 <b>Número de cópias mantidas:</b> 2<br>
                 <b>Frequência de conferência manual:</b> Diariamente
             ');
@@ -612,7 +612,7 @@
             return $this->enviaMensagem();
         }
         private function imgActiveServ06(){
-            $this->assunto = utf8_decode('CONFERIR BACKUP - Imagem S.O "Active Boot" - (serv06)');
+            $this->assunto = utf8_decode('CONFERIR BACKUP - Imagem S.O "Active Boot" - (HD na ATI)');
             $this->mensagem = utf8_decode('
                 <b>BACKUP:</b> Imagem S.O "Active Boot" - (serv06)<br>
                 <b>Origem física:</b> Servidor (serv06)<br>
@@ -633,7 +633,7 @@
             return $this->enviaMensagem();
         }
         private function imgAcronisServ02(){
-            $this->assunto = utf8_decode('CONFERIR BACKUP - Imagem S.O "Acronis" - (serv02)');
+            $this->assunto = utf8_decode('CONFERIR BACKUP - Imagem S.O "Acronis" - (HD na ATI)');
             $this->mensagem = utf8_decode('
                 <b>BACKUP:</b> Imagem S.O "Acronis" - (serv02)<br>
                 <b>Origem física:</b> Servidor (serv02)<br>
@@ -654,7 +654,7 @@
             return $this->enviaMensagem();
         }
         private function imgAcronisServ03(){
-            $this->assunto = utf8_decode('CONFERIR BACKUP - Imagem S.O "Acronis" - (serv03)');
+            $this->assunto = utf8_decode('CONFERIR BACKUP - Imagem S.O "Acronis" - (HD na ATI)');
             $this->mensagem = utf8_decode('
                 <b>BACKUP:</b> Imagem S.O "Acronis" - (serv03)<br>
                 <b>Origem física:</b> Servidor (serv03)<br>
@@ -675,7 +675,7 @@
             return $this->enviaMensagem();
         }
         private function imgAcronisServ05(){
-            $this->assunto = utf8_decode('CONFERIR BACKUP - Imagem S.O "Acronis" - (serv05)');
+            $this->assunto = utf8_decode('CONFERIR BACKUP - Imagem S.O "Acronis" - (HD na ATI)');
             $this->mensagem = utf8_decode('
                 <b>BACKUP:</b> Imagem S.O "Acronis" - (serv05)<br>
                 <b>Origem física:</b> Servidor (serv05)<br>
@@ -718,10 +718,10 @@
             // $correio->addAttachment('/tmp/image.jpg', 'nome.jpg');
         
             if(!$correio->send()) {
-                echo 'Não foi possível enviar a mensagem.<br>';
+                echo 'Não foi possível enviar a mensagem!<br>';
                 echo 'Erro: ' . $correio->ErrorInfo;
             } else {
-                echo 'Mensagem enviada.';
+                echo 'Mensagem enviada!';
             }
         }
 
@@ -772,11 +772,11 @@
         }
 
         function quinta(){
-            $this->bancoDoBrasil();
             $this->arquivosAPD();
             $this->arquivosAPDSalaSom();
-            $this->bancoShop9(); 
             $this->relogioDePonto();
+            $this->bancoShop9();
+            $this->bancoDoBrasil(); 
         }
 
         function sexta(){

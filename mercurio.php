@@ -21,6 +21,25 @@ $diasSemana = [
 
 $hoje = date('N');
 
+#Valores referente a Mês
+$diaDoMes = date('j');
+$numeroMes = date('n');
+
+$nomeMes=[
+    'janeiro' => 1,
+    'fevereiro' => 2,
+    'marco' => 3,
+    'abril' => 4,
+    'maio' => 5,
+    'junho' => 6,
+    'julho' => 7,
+    'agosto' => 8,
+    'setembro' => 9,
+    'outubro' => 10,
+    'novembro' => 11,
+    'dezembro' => 12
+];
+
 if($hoje < $diasSemana['Sabado']){
     $dados->mensagemPrivada();
 }
@@ -40,25 +59,6 @@ if($hoje == $diasSemana['Segunda']){
 }elseif($hoje == $diasSemana['Domingo']){
     $dados->domingo();
 }
-
-#Valores referente a Mês
-$diaDoMes = date('j');
-$numeroMes = date('n');
-
-$nomeMes=[
-    'janeiro' => 1,
-    'fevereiro' => 2,
-    'marco' => 3,
-    'abril' => 4,
-    'maio' => 5,
-    'junho' => 6,
-    'julho' => 7,
-    'agosto' => 8,
-    'setembro' => 9,
-    'outubro' => 10,
-    'novembro' => 11,
-    'dezembro' => 12
-];
 
 if($diaDoMes == 1){
     if($numeroMes == $nomeMes['janeiro']){
