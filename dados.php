@@ -330,17 +330,17 @@
         }
 
         private function comunhao21CF(){
-            $this->assunto = utf8_decode('CONFERIR BACKUP - Comunhao 21 Código Fonte - (serv05)');
-            $this->mensagem = utf8_decode('<b>BACKUP:</b> Comunhao 21');
-            $this->mensagemAlt = utf8_decode('CONFERIR BACKUP - Comunhao 21 - (serv05)'); 
+            $this->assunto = utf8_decode('CONFERIR BACKUP - Comunhao21 Código Fonte - (serv05)');
+            $this->mensagem = utf8_decode('<b>BACKUP:</b> Comunhao21');
+            $this->mensagemAlt = utf8_decode('CONFERIR BACKUP - Comunhao21 - (serv05)'); 
             
             return $this->enviaMensagem();
         }
 
         private function comunhao21BK(){
-            $this->assunto = utf8_decode('CONFERIR BACKUP - Comunhao 21 Banco de Dados - (serv05)');
+            $this->assunto = utf8_decode('CONFERIR BACKUP - Comunhao21 Banco de Dados - (serv05)');
             $this->mensagem = utf8_decode('
-                <b>BACKUP:</b> Comunhao 21<br>
+                <b>BACKUP:</b> Comunhao21<br>
                 <b>Origem física:</b> Servidor externo da empresa P21<br>
                 <b>Orígem lógica:</b> sftp://@comunhaoweb.com.br<br>
                 <b>Destino físico:</b> Servidor (serv05)<br>
@@ -356,7 +356,7 @@
                 <b>Número de cópias mantidas:</b> 3 (Exclusão Manual)<br>
                 <b>Frequência de conferência manual:</b> Diariamente
             ');
-            $this->mensagemAlt = utf8_decode('CONFERIR BACKUP - Comunhao 21 Banco de Dados - (serv05)'); 
+            $this->mensagemAlt = utf8_decode('CONFERIR BACKUP - Comunhao21 Banco de Dados - (serv05)'); 
             
             return $this->enviaMensagem();
         }

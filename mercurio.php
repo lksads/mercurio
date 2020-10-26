@@ -40,10 +40,6 @@ $nomeMes=[
     'dezembro' => 12
 ];
 
-if($hoje < $diasSemana['Sabado']){
-    $dados->mensagemPrivada();
-}
-
 if($hoje == $diasSemana['Segunda']){
     $dados->segunda();
 }elseif($hoje == $diasSemana['Terca']){
@@ -90,4 +86,8 @@ if($diaDoMes == 1){
     $dados->relatorio();
 }elseif(($numeroMes == $nomeMes['fevereiro']) && $diaDoMes == 28){
     $dados->relatorio();
+}
+
+if($hoje < $diasSemana['Sabado']){
+    $dados->mensagemPrivada();
 }
