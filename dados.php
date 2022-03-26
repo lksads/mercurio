@@ -497,14 +497,6 @@
             return $this->enviaMensagem();
         }
 
-        private function relatorioATI(){
-            $this->assunto = utf8_decode('Gerar Relatorio da ATI');
-            $this->mensagem = utf8_decode('Gerar Relatorio ATI');
-            $this->mensagemAlt = utf8_decode('Gerar Relatorio da ATI'); 
-            
-            return $this->enviaMensagem();
-        }
-
         #Criando Dados dos Meses
         private function imgSOServ00(){
             $this->assunto = utf8_decode('CONFERIR BACKUP - Imagem S.O "Ferramenta Windows" - (serv00)');
@@ -725,10 +717,29 @@
             }
         }
 
-        function relatorio(){
-            $this->relatorioATI();
+        function enviarProgramacaoDia($pTipo){
+            if($pTipo == "Escala"){
+                $this->gerarEscalaServicoIntervaloATI();
+            }elseif($pTipo == "Relatório"){
+                $this->gerarRelatorioAtrasoFaltaExtraATI();
+            }
         }
 
+        private function gerarEscalaServicoIntervaloATI(){
+            $this->assunto = utf8_decode('Gerar ESCALA DE SERVIÇO e ESCALA DE INTERVALO da ATI');
+            $this->mensagem = utf8_decode('Gerar ESCALA DE SERVIÇO e ESCALA DE INTERVALO da ATI');
+            $this->mensagemAlt = utf8_decode('Gerar ESCALA DE SERVIÇO e ESCALA DE INTERVALO da ATI'); 
+            
+            return $this->enviaMensagem();
+        }
+
+        private function gerarRelatorioAtrasoFaltaExtraATI(){
+            $this->assunto = utf8_decode('Gerar relatório de FALTAS, ATRASOS e EXTRAS da ATI');
+            $this->mensagem = utf8_decode('Gerar relatório de FALTAS, ATRASOS e EXTRAS da ATI');
+            $this->mensagemAlt = utf8_decode('Gerar relatório de FALTAS, ATRASOS e EXTRAS da ATI'); 
+            
+            return $this->enviaMensagem();
+        }
 
         function mensagemPrivada(){
             $this->mensagemBreno();

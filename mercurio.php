@@ -82,10 +82,10 @@ if($diaDoMes == 1){
     }elseif($numeroMes == $nomeMes['dezembro']){
         $dados->dezembro();
     }
-}elseif($diaDoMes == 30){
-    $dados->relatorio();
-}elseif(($numeroMes == $nomeMes['fevereiro']) && $diaDoMes == 28){
-    $dados->relatorio();
+}elseif($diaDoMes == 3){
+    $dados->enviarProgramacaoDia("Escala");
+}elseif($diaDoMes == 18){
+    $dados->enviarProgramacaoDia("Relatório");
 }
 
 if($hoje < $diasSemana['Sabado']){
