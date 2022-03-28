@@ -23,19 +23,19 @@
             return $this->$pFieldName;
         }
 
-        function __construct($pAmbiente){
+        function __construct($pAmbiente, $pSenhaDadosPadroes){
             if($pAmbiente == 'Desenvolvimento'){
                 $this->email = 'ati@comunhaoespirita.com';
             }else{
                 $this->email = 'ati.suporte@comunhaoespirita.com';
             }
-            $this->dadosPadroes();
+            $this->dadosPadroes($pSenhaDadosPadroes);
         }
 
-        private function dadosPadroes(){
+        private function dadosPadroes($pSenhaDadosPadroes){
             $this->host = 'smtp.comunhaoespirita.com';
             $this->usuario = 'ati@comunhaoespirita.com';
-            $this->senha = '***';
+            $this->senha = $pSenhaDadosPadroes;
             $this->porta = 587;
             $this->destinatario = $this->email;
             $this->nomeDestinatario = utf8_decode('ATI - Equipe');

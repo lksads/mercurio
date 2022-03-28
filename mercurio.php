@@ -4,11 +4,12 @@ require 'libr/src/PHPMailer.php';
 require 'libr/src/Exception.php';
 require 'libr/src/SMTP.php';
 require 'dados.php';
+require 'configuracao.php';
 
 $ambiente = 'Produção';
 // $ambiente = 'Desenvolvimento';
 
-$dados = new Dados($ambiente);
+$dados = new Dados($ambiente, getSenhaBancoMySQL());
 $diasSemana = [
     'Segunda' => 1,
     'Terca' => 2,
