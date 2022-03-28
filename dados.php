@@ -59,6 +59,14 @@
             
             return $this->enviaMensagem();
         }
+        private function mensagemVinicius(){
+            $this->nomeDestinatario = utf8_decode('LUCAS VINÍCIUS COSTA'); 
+            $this->assunto = utf8_decode('LUCAS VINÍCIUS COSTA - Planejamento diário');
+            $this->mensagem = utf8_decode('Consultar Agenda, Emails, Tickets e Whatsapp da ATI');
+            $this->mensagemAlt = utf8_decode('Consultar Agenda, Emails, Tickets e Whatsapp da ATI');   
+
+            return $this->enviaMensagem();
+        }
         private function reuniaoATI(){
             $this->assunto = utf8_decode('Reunião semanal da ATI');
             $this->mensagem = utf8_decode('Reunião semanal da ATI');
@@ -744,6 +752,7 @@
         function mensagemPrivada(){
             $this->mensagemBreno();
             $this->mensagemLucas();
+            $this->mensagemVinicius();
         }
 
         function segunda(){
