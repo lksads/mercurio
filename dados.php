@@ -476,27 +476,27 @@
             
             return $this->enviaMensagem();
         }
-        private function patrimonioApache(){
-            $this->assunto = utf8_decode('CONFERIR BACKUP - Apache "Patrimônio" - (serv08)');
-            $this->mensagem = utf8_decode('
-                <b>BACKUP:</b> Apache "Patrimônio" - (serv08)<br>
-                <b>Origem física:</b> Servidor (serv08)<br>
-                <b>Orígem lógica:</b> "C:\Program Files\Apache Software Foundation"<br>
-                <b>Destino físico:</b> Servidor (serv08)<br>
-                <b>Destino lógico:</b> "D:\bkp_apache ativos"<br>
-                <b>Tipo:</b> Completo<br>
-                <b>Frequência:</b> Diariamente<br>
-                <b>Início da rotina:</b> 21h00<br>
-                <b>Ferramenta:</b> Cobian Backup<br>
-                <b>Método:</b> Automático<br>
-                <b>Tempo aproximado de duração da rotina:</b> 56 seg<br>
-                <b>Número de cópias mantidas:</b> 2<br>
-                <b>Frequência de conferência manual:</b> Diariamente
-            ');
-            $this->mensagemAlt = utf8_decode('CONFERIR BACKUP - Apache "Patrimônio" - (serv08)');
+        // private function patrimonioApache(){
+        //     $this->assunto = utf8_decode('CONFERIR BACKUP - Apache "Patrimônio" - (serv08)');
+        //     $this->mensagem = utf8_decode('
+        //         <b>BACKUP:</b> Apache "Patrimônio" - (serv08)<br>
+        //         <b>Origem física:</b> Servidor (serv08)<br>
+        //         <b>Orígem lógica:</b> "C:\Program Files\Apache Software Foundation"<br>
+        //         <b>Destino físico:</b> Servidor (serv08)<br>
+        //         <b>Destino lógico:</b> "D:\bkp_apache ativos"<br>
+        //         <b>Tipo:</b> Completo<br>
+        //         <b>Frequência:</b> Diariamente<br>
+        //         <b>Início da rotina:</b> 21h00<br>
+        //         <b>Ferramenta:</b> Cobian Backup<br>
+        //         <b>Método:</b> Automático<br>
+        //         <b>Tempo aproximado de duração da rotina:</b> 56 seg<br>
+        //         <b>Número de cópias mantidas:</b> 2<br>
+        //         <b>Frequência de conferência manual:</b> Diariamente
+        //     ');
+        //     $this->mensagemAlt = utf8_decode('CONFERIR BACKUP - Apache "Patrimônio" - (serv08)');
             
-            return $this->enviaMensagem();
-        }
+        //     return $this->enviaMensagem();
+        // }
         private function arquivosGeraisServ06(){
             $this->assunto = utf8_decode('CONFERIR BACKUP - Backup - Arquivos Gerais - (serv06)');
             $this->mensagem = utf8_decode('<b>BACKUP:</b> Arquivos Gerais - (serv06)');
