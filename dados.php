@@ -752,7 +752,9 @@
         function mensagemPrivada(){
             $this->mensagemBreno();
             $this->mensagemLucas();
-            $this->mensagemVinicius();
+            if(date('j') != 1 && date('j') != 6){
+                $this->mensagemVinicius();
+            }            
         }
 
         function segunda(){

@@ -84,11 +84,11 @@ if($diaDoMes == 1){
         $dados->dezembro();
     }
 }elseif($diaDoMes == 3){
-    $dados->enviarProgramacaoDia("Escala");
-}elseif($diaDoMes == 18){
     $dados->enviarProgramacaoDia("Relatório");
+}elseif($diaDoMes == 18){
+    $dados->enviarProgramacaoDia("Escala");
 }
 
-if($hoje < $diasSemana['Sabado']){
+if($hoje <= $diasSemana['Sabado']){
     $dados->mensagemPrivada();
 }
