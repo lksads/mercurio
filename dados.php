@@ -771,7 +771,7 @@
         function terca(){
             $this->patrimonioCF();
             $this->patrimonioBD();
-            $this->patrimonioApache();
+            // $this->patrimonioApache();
             $this->arquivosAPD();
             $this->arquivosAPDSalaSom();
             $this->bancoShop9();
