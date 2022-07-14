@@ -23,7 +23,7 @@ $diasSemana = [
 $hoje = date('N');
 
 #Valores referente a Mês
-$diaDoMes = date('j');
+$diasSemana = date('j');
 $numeroMes = date('n');
 
 $nomeMes=[

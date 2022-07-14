@@ -67,6 +67,16 @@
 
             return $this->enviaMensagem();
         }
+
+        private function mensagemMathias(){
+            $this->nomeDestinatario = utf8_decode('MATHIAS COLETTI');
+            $this->assunto = utf8_decode('MATHIAS COLETTI - Planejamento diário');
+            $this->mensagem = utf8_decode('Consultar Agenda, Emails, Tickets e Whatsapp da ATI');
+            $this->mensagemAlt = utf8_decode('Consultar Agenda, Emails, Tickets e Whatsapp da ATI');
+            
+            return $this->enviaMensagem();
+        }
+
         private function reuniaoATI(){
             $this->assunto = utf8_decode('Reunião semanal da ATI');
             $this->mensagem = utf8_decode('Reunião semanal da ATI');
@@ -752,6 +762,7 @@
         function mensagemPrivada(){
             $this->mensagemBreno();
             $this->mensagemLucas();
+            $this->mensagemMathias();
             if(date('j') != 1 && date('j') != 6){
                 $this->mensagemVinicius();
             }            
