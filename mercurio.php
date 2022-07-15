@@ -17,13 +17,13 @@ $diasSemana = [
     'Quinta' => 4,
     'Sexta' => 5,
     'Sabado' => 6,
-    'Domingo' => 7,
+    'Domingo' => 7
 ];
 
 $hoje = date('N');
 
 #Valores referente a Mês
-$diasSemana = date('j');
+$diaDoMes = date('j');
 $numeroMes = date('n');
 
 $nomeMes=[
@@ -88,6 +88,7 @@ if($diaDoMes == 1){
 }elseif($diaDoMes == 18){
     $dados->enviarProgramacaoDia("Escala");
 }
+
 
 if($hoje <= $diasSemana['Sabado']){
     $dados->mensagemPrivada();

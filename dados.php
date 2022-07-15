@@ -763,6 +763,7 @@
             $this->mensagemBreno();
             $this->mensagemLucas();
             $this->mensagemMathias();
+            
             if(date('j') != 1 && date('j') != 6){
                 $this->mensagemVinicius();
             }            
