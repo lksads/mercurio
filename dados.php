@@ -51,14 +51,7 @@
             
             return $this->enviaMensagem();
         }
-        private function mensagemBreno(){
-            $this->nomeDestinatario = utf8_decode('BRENO DUARTE');
-            $this->assunto = utf8_decode('BRENO DUARTE - Planejamento diário');
-            $this->mensagem = utf8_decode('Consultar Agenda, Emails, Tickets e Whatsapp da ATI');
-            $this->mensagemAlt = utf8_decode('Consultar Agenda, Emails, Tickets e Whatsapp da ATI');   
-            
-            return $this->enviaMensagem();
-        }
+        
         private function mensagemVinicius(){
             $this->nomeDestinatario = utf8_decode('LUCAS VINÍCIUS COSTA'); 
             $this->assunto = utf8_decode('LUCAS VINÍCIUS COSTA - Planejamento diário');
@@ -760,7 +753,6 @@
         }
 
         function mensagemPrivada(){
-            $this->mensagemBreno();
             $this->mensagemLucas();
             $this->mensagemMathias();
             
