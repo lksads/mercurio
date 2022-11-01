@@ -1,82 +1,95 @@
 <?php
 
-use PHPMailer\PHPMailer\PHPMailer;
-
 require 'libr/src/PHPMailer.php';
 require 'libr/src/Exception.php';
 require 'libr/src/SMTP.php';
 require 'dados.php';
+require 'configuracao.php';
 
-$dados = new Dados();
-$diasSemana=[
+$ambiente = 'Produção';
+// $ambiente = 'Desenvolvimento';
+
+$dados = new Dados($ambiente, getSenhaBancoMySQL());
+$diasSemana = [
     'Segunda' => 1,
     'Terca' => 2,
     'Quarta' => 3,
     'Quinta' => 4,
     'Sexta' => 5,
     'Sabado' => 6,
-    'Domingo' => 7,
+    'Domingo' => 7
 ];
 
 $hoje = date('N');
 
-if($hoje < $diasSemana['Sabado']){
-    $dados->mensagemLucas();
-    enviaMensagem($dados);
-    $dados->mensagemBreno();
-    enviaMensagem($dados);
-}
+#Valores referente a Mês
+$diaDoMes = date('j');
+$numeroMes = date('n');
+
+$nomeMes=[
+    'janeiro' => 1,
+    'fevereiro' => 2,
+    'marco' => 3,
+    'abril' => 4,
+    'maio' => 5,
+    'junho' => 6,
+    'julho' => 7,
+    'agosto' => 8,
+    'setembro' => 9,
+    'outubro' => 10,
+    'novembro' => 11,
+    'dezembro' => 12
+];
 
 if($hoje == $diasSemana['Segunda']){
-    $dados->mensagemLucas();
-    enviaMensagem($dados);
+    $dados->segunda();
 }elseif($hoje == $diasSemana['Terca']){
-    $dados->mensagemLucas();
-    enviaMensagem($dados);
+    $dados->terca();
 }elseif($hoje == $diasSemana['Quarta']){
-    $dados->coletaDoacaoAlmox();
-    enviaMensagem($dados);
+    $dados->quarta();
 }elseif($hoje == $diasSemana['Quinta']){
-    $dados->mensagemLucas();
-    enviaMensagem($dados);
+    $dados->quinta();
 }elseif($hoje == $diasSemana['Sexta']){
-    $dados->mensagemReuniaoATI();
-    enviaMensagem($dados);
+    $dados->sexta();
 }elseif($hoje == $diasSemana['Sabado']){
-    $dados->mensagemLucas();
-    enviaMensagem($dados);
+    $dados->sabado();
 }elseif($hoje == $diasSemana['Domingo']){
-    $dados->mensagemLucas();
-    enviaMensagem($dados);
+    $dados->domingo();
 }
 
-function enviaMensagem($dados){
-    $correio = new PHPMailer();
-
-    $correio->isSMTP();
-    $correio->SMTPAuth = true;
-    $correio->Host = $dados->getField('host');
-    $correio->Username = $dados->getField('usuario');
-    $correio->Password = $dados->getField('senha');
-    $correio->Port = $dados->getField('porta');
-
-    $correio->setFrom ($dados->getField('remetente'), $dados->getField('nomeRemetente'));
-    // $correio->addReplyTo('no-reply@email.com.br');
-    // $correio->addAddress('email@email.com.br', ‘Nome’);
-    $correio->addAddress($dados->getField('destinatario'), $dados->getField('nomeDestinatario'));
-    // $correio->addCC('email@email.com.br', 'Cópia');
-    // $correio->addBCC('email@email.com.br', 'Cópia Oculta')
-
-    $correio->isHTML(true);
-    $correio->Subject = $dados->getField('assunto');
-    $correio->Body    = $dados->getField('mensagem');
-    $correio->AltBody = $dados->getField('mensagemAlt');
-    // $correio->addAttachment('/tmp/image.jpg', 'nome.jpg');
-
-    if(!$correio->send()) {
-        echo 'Não foi possível enviar a mensagem.<br>';
-        echo 'Erro: ' . $correio->ErrorInfo;
-    } else {
-        echo 'Mensagem enviada.';
+if($diaDoMes == 1){
+    if($numeroMes == $nomeMes['janeiro']){
+        $dados->janeiro();
+    }elseif($numeroMes == $nomeMes['fevereiro']){
+        $dados->fevereiro();
+    }elseif($numeroMes == $nomeMes['marco']){
+        $dados->marco();
+    }elseif($numeroMes == $nomeMes['abril']){
+        $dados->abril();
+    }elseif($numeroMes == $nomeMes['maio']){
+        $dados->maio();
+    }elseif($numeroMes == $nomeMes['junho']){
+        $dados->junho();
+    }elseif($numeroMes == $nomeMes['julho']){
+        $dados->julho();
+    }elseif($numeroMes == $nomeMes['agosto']){
+        $dados->agosto();
+    }elseif($numeroMes == $nomeMes['setembro']){
+        $dados->setembro();
+    }elseif($numeroMes == $nomeMes['outubro']){
+        $dados->outubro();
+    }elseif($numeroMes == $nomeMes['novembro']){
+        $dados->novembro();
+    }elseif($numeroMes == $nomeMes['dezembro']){
+        $dados->dezembro();
     }
+}elseif($diaDoMes == 3){
+    $dados->enviarProgramacaoDia("Relatório");
+}elseif($diaDoMes == 18){
+    $dados->enviarProgramacaoDia("Escala");
+}
+
+
+if($hoje <= $diasSemana['Sabado']){
+    $dados->mensagemPrivada();
 }
