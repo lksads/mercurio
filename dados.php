@@ -714,6 +714,7 @@
             $correio->Subject = $this->assunto;
             $correio->Body    = $this->mensagem;
             $correio->AltBody = $this->mensagemAlt;
+            
             // $correio->addReplyTo('no-reply@email.com.br');
             // $correio->addAddress('email@email.com.br', ‘Nome’);
             // $correio->addCC('email@email.com.br', 'Cópia');
