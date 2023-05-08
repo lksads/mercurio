@@ -52,15 +52,6 @@
             return $this->enviaMensagem();
         }
         
-        private function mensagemVinicius(){
-            $this->nomeDestinatario = utf8_decode('LUCAS VINÍCIUS COSTA'); 
-            $this->assunto = utf8_decode('LUCAS VINÍCIUS COSTA - Planejamento diário');
-            $this->mensagem = utf8_decode('Consultar Agenda, Emails, Tickets e Whatsapp da ATI');
-            $this->mensagemAlt = utf8_decode('Consultar Agenda, Emails, Tickets e Whatsapp da ATI');   
-
-            return $this->enviaMensagem();
-        }
-
         private function mensagemMathias(){
             $this->nomeDestinatario = utf8_decode('MATHIAS COLETTI');
             $this->assunto = utf8_decode('MATHIAS COLETTI - Planejamento diário');
@@ -714,6 +705,7 @@
             $correio->Subject = $this->assunto;
             $correio->Body    = $this->mensagem;
             $correio->AltBody = $this->mensagemAlt;
+            
             // $correio->addReplyTo('no-reply@email.com.br');
             // $correio->addAddress('email@email.com.br', ‘Nome’);
             // $correio->addCC('email@email.com.br', 'Cópia');
@@ -755,10 +747,7 @@
         function mensagemPrivada(){
             $this->mensagemLucas();
             $this->mensagemMathias();
-            
-            if(date('j') != 1 && date('j') != 6){
-                $this->mensagemVinicius();
-            }            
+                     
         }
 
         function segunda(){
