@@ -51,6 +51,11 @@
             
             return $this->enviaMensagem();
         }
+        private function Teste(){
+            $this->nomeDestinatario = utf8_decode('Mensagem de TEste');
+            $this->assunto = utf8_decode('Por Mathias Xavier Coletti');
+            
+        }
 
         private function reuniaoATI(){
             $this->assunto = utf8_decode('Reunião semanal da ATI');
@@ -737,6 +742,7 @@
 
         function mensagemPrivada(){
             $this->mensagemMathias();
+            $this->Teste();
                      
         }
 
