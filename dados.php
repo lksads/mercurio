@@ -43,15 +43,6 @@
             $this->nomeRemetente = utf8_decode('Assessoria de Tecnologia da Informação - ATI');
         }
 
-        private function mensagemLucas(){
-            $this->nomeDestinatario = utf8_decode('LUCAS ALVES');
-            $this->assunto = utf8_decode('LUCAS ALVES - Planejamento diário');
-            $this->mensagem = utf8_decode('Consultar Agenda, Emails, Tickets e Whatsapp da ATI');
-            $this->mensagemAlt = utf8_decode('Consultar Agenda, Emails, Tickets e Whatsapp da ATI');
-            
-            return $this->enviaMensagem();
-        }
-        
         private function mensagemMathias(){
             $this->nomeDestinatario = utf8_decode('MATHIAS COLETTI');
             $this->assunto = utf8_decode('MATHIAS COLETTI - Planejamento diário');
@@ -745,7 +736,6 @@
         }
 
         function mensagemPrivada(){
-            $this->mensagemLucas();
             $this->mensagemMathias();
                      
         }
