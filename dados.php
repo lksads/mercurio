@@ -560,27 +560,27 @@
             
             return $this->enviaMensagem();
         }
-        private function arquivosGTV(){
-            $this->assunto = utf8_decode('CONFERIR BACKUP - Arquivos GTV - (serv02)');
-            $this->mensagem = utf8_decode('
-                <b>BACKUP:</b> Arquivos GTV - (serv02)<br>
-                <b>Origem física:</b> Servidor (serv02)<br>
-                <b>Orígem lógica:</b> "F:\Rede\GTV"<br>
-                <b>Destino físico:</b> Servidor (serv02)<br>
-                <b>Destino lógico:</b> "G:\Backup GTV - Full"<br>
-                <b>Tipo:</b> Completo<br>
-                <b>Frequência:</b> Diariamente<br>
-                <b>Início da rotina:</b> 4h<br>
-                <b>Ferramenta:</b> Cobian Backup<br>
-                <b>Método:</b> Automático<br>
-                <b>Tempo aproximado de duração da rotina:</b> 25m<br>
-                <b>Número de cópias mantidas:</b> 2<br>
-                <b>Frequência de conferência manual:</b> Diariamente
-            ');
-            $this->mensagemAlt = utf8_decode('CONFERIR BACKUP - Arquivos GTV - (serv02)');    
-            
-            return $this->enviaMensagem();
-        }
+        //private function arquivosGTV(){
+        //    $this->assunto = utf8_decode('CONFERIR BACKUP - Arquivos GTV - (serv02)');
+        //    $this->mensagem = utf8_decode('
+        //        <b>BACKUP:</b> Arquivos GTV - (serv02)<br>
+        //       <b>Origem física:</b> Servidor (serv02)<br>
+        //        <b>Orígem lógica:</b> "F:\Rede\GTV"<br>
+        //        <b>Destino físico:</b> Servidor (serv02)<br>
+        //        <b>Destino lógico:</b> "G:\Backup GTV - Full"<br>
+        //        <b>Tipo:</b> Completo<br>
+        //        <b>Frequência:</b> Diariamente<br>
+        //        <b>Início da rotina:</b> 4h<br>
+        //        <b>Ferramenta:</b> Cobian Backup<br>
+        //        <b>Método:</b> Automático<br>
+        //        <b>Tempo aproximado de duração da rotina:</b> 25m<br>
+        //        <b>Número de cópias mantidas:</b> 2<br>
+        //        <b>Frequência de conferência manual:</b> Diariamente
+        //    ');
+        //    $this->mensagemAlt = utf8_decode('CONFERIR BACKUP - Arquivos GTV - (serv02)');    
+        //    
+        //    return $this->enviaMensagem();
+        //}
         private function arquivosATI(){
             $this->assunto = utf8_decode('CONFERIR BACKUP - Arquivos ATI - (serv02)');
             $this->mensagem = utf8_decode('
@@ -837,70 +837,70 @@
         function janeiro(){
             $this->imgSOServ00();
             $this->imgActiveServ00();
-            $this->arquivosGTV(); 
+            //$this->arquivosGTV(); 
             $this->arquivosATI();
         }
         function fevereiro(){
             $this->imgActiveServ06();
             $this->imgSOServ06();
-            $this->arquivosGTV();
+            //$this->arquivosGTV();
             $this->arquivosATI();
         }
         function marco(){
             $this->imgAcronisServ05();
             $this->imgAcronisServ03();
-            $this->arquivosGTV();
+            //$this->arquivosGTV();
             $this->arquivosATI();
         }
         function abril(){
             $this->imgAcronisServ02();
-            $this->arquivosGTV();
+            //$this->arquivosGTV();
             $this->arquivosATI();
         }
         function maio(){
             $this->imgSOServ00();
             $this->imgActiveServ00();
-            $this->arquivosGTV(); 
+            //$this->arquivosGTV(); 
             $this->arquivosATI();   
         }
         function junho(){
             $this->imgActiveServ06();
             $this->imgSOServ06();
-            $this->arquivosGTV();
+           // $this->arquivosGTV();
             $this->arquivosATI();
         }
         function julho(){
             $this->imgAcronisServ05();
             $this->imgAcronisServ03();
-            $this->arquivosGTV();
+           // $this->arquivosGTV();
             $this->arquivosATI();
         }
         function agosto(){
             $this->imgAcronisServ02();
-            $this->arquivosGTV();
+            //$this->arquivosGTV();
             $this->arquivosATI();
         }
         function setembro(){
             $this->imgSOServ00();
             $this->imgActiveServ00();
-            $this->arquivosGTV(); 
+            //$this->arquivosGTV(); 
             $this->arquivosATI();
         }
         function outubro(){
             $this->imgActiveServ06();
             $this->imgSOServ06();
-            $this->arquivosGTV();
+            //$this->arquivosGTV();
             $this->arquivosATI();
         }
         function novembro(){
             $this->imgAcronisServ05();
             $this->imgAcronisServ03();
-            $this->arquivosGTV();
+            //$this->arquivosGTV();
             $this->arquivosATI();
         }
         function dezembro(){
             $this->imgAcronisServ02();
-            $this->arquivosGTV();
+            //$this->arquivosGTV();
             $this->arquivosATI();
         }
     }
