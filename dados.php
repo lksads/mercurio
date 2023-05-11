@@ -469,7 +469,7 @@
             
             return $this->enviaMensagem();
         }
-        private function BackupDAC(){
+        private function backupDAC(){
             $this->assunto = utf8_decode('CONFERIR BACKUP DADOS - DAC  (comunhao-22)');
             $this->mensagem = utf8_decode('
                 <b>BACKUP:</b> BACKUP DADOS - DAC  (comunhao-22)<br>
@@ -777,6 +777,7 @@
             $this->bancoShop9Bs9();
             $this->bancoShop9BAK();
             $this->bancoShopIntranet();
+            $this->backupDAC();
         }
 
         function terca(){
@@ -802,6 +803,7 @@
             $this->bancoShop9BAK();
             $this->bancoShopIntranet();
             $this->coletaDoacaoAlmox();
+            $this->backupDAC();
         }
 
         function quinta(){
@@ -823,6 +825,7 @@
             $this->bancoShop9Bs9();
             $this->bancoShop9BAK();
             $this->bancoShopIntranet();
+            $this->backupDAC();
         }
 
         function sabado(){
