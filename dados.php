@@ -469,6 +469,25 @@
             
             return $this->enviaMensagem();
         }
+        private function BackupDAC(){
+            $this->assunto = utf8_decode('CONFERIR BACKUP DADOS - DAC  (comunhao-22)');
+            $this->mensagem = utf8_decode('
+                <b>BACKUP:</b> BACKUP DADOS - DAC  (comunhao-22)<br>
+                <b>Origem física:</b> comunhao-22<br>
+                <b>Orígem lógica:</b> D:\<br>
+                <b>Destino físico:</b> comunhao-22<br>
+                <b>Destino lógico:</b> "E:\"<br>
+                <b>Tipo:</b> Comgremental<br>
+                <b>Frequência:</b> Semanalmente (Segunda, Quarta e Sexta)<br>
+                <b>Início da rotina:</b> 3:00h<br>
+                <b>Ferramenta:</b> Cobian<br>
+                <b>Método:</b> Automatico<br>
+                <b>Tempo aproximado de duração da rotina:</b> 1hora<br>
+                <b>Número de cópias mantidas:</b> 1<br>
+                <b>Frequência de conferência manual:</b> Semanalmente (Segunda, Quarta e Sexta)
+            ');
+            return $this->enviaMensagem();
+        }
         // private function patrimonioApache(){
         //     $this->assunto = utf8_decode('CONFERIR BACKUP - Apache "Patrimônio" - (serv08)');
         //     $this->mensagem = utf8_decode('
