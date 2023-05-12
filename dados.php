@@ -77,8 +77,8 @@
         private function bancoDoBrasil(){
             $this->assunto = utf8_decode('CONFERIR BACKUP - Banco do Brasil - (serv00)');
             $this->mensagem = utf8_decode('
-                <b>BACKUP:</b> Banco do Brasil - (comunhao-152)<br>
-                <b>Origem física:</b> comunhao-152<br>
+                <b>BACKUP:</b> Banco do Brasil - (comunhao-312)<br>
+                <b>Origem física:</b> comunhao-312<br>
                 <b>Orígem lógica:</b> "C:\bancodobrasil"<br>
                 <b>Destino físico:</b> Servidor (serv00)<br>
                 <b>Destino lógico:</b> "D:\Rede\DAF\BACKUP-BANCODOBRASIL"<br>
@@ -87,7 +87,7 @@
                 <b>Ferramenta:</b> Cobian Backup<br>
                 <b>Método:</b> Automático<br>
                 <b>Tempo aproximado de duração da rotina:</b> 5m<br>
-                <b>Número de cópias mantidas:</b> 3<br>
+                <b>Número de cópias mantidas:</b> 3 <br>
                 <b>Frequência de conferência manual:</b> Semanalmente (Segunda, Quarta e Sexta)
             ');
             $this->mensagemAlt = utf8_decode('CONFERIR BACKUP - Banco do Brasil - (comunhao-152)');    
