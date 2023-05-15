@@ -187,8 +187,11 @@
                 <b>BACKUP:</b> Arquivos Gerais<br>
                 <b>Origem física:</b> Servidor (serv00)<br>
                 <b>Orígem lógica:</b> "D:\Rede"<br>
-                <b>Destino físico:</b> Servidor (serv00)<br>
-                <b>Destino lógico:</b> "E:\bkp_arquivo\backup_rede"<br>
+                <b>Destino físico:</b> Servidor 12<br>
+                <b>Destino lógico:</b> "D:\"<br>
+                "E:\"<br>
+                "F:\"<br>
+                "G:\"<br>
                 <b>Tipo:</b> Completo<br>
                 <b>Frequência:</b> Diariamente<br>
                 <b>Início da rotina:</b> 23h50<br>
