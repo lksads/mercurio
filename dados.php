@@ -118,23 +118,23 @@
         }
 
         private function arquivosAPDSalaSom(){
-            $this->assunto = utf8_decode('CONFERIR BACKUP - Arquivos APD "Sala de Som" - (comunhao-121)');
+            $this->assunto = utf8_decode('CONFERIR BACKUP - Arquivos APD "Sala de Som" - Servidor 17');
             $this->mensagem = utf8_decode('
                 <b>BACKUP:</b> Arquivos APD "Sala de Som" - (comunhao-121)<br>
                 <b>Origem física:</b> Servidor (comunhao-121)<br>
                 <b>Orígem lógica:</b> "E:\ADR"<br>
-                <b>Destino físico:</b> Servidor (comunhao-121)<br>
-                <b>Destino lógico:</b> "D:\BACKUP\ADR"<br>
+                <b>Destino físico:</b> Servidor 17<br>
+                <b>Destino lógico:</b> "G:\"<br>
                 <b>Tipo:</b> Completo<br>
-                <b>Frequência:</b> Diariamente<br>
+                <b>Frequência:</b> Dividido em partes diariamente<br>
                 <b>Início da rotina:</b> 22h30<br>
                 <b>Ferramenta:</b> Cobian Backup<br>
-                <b>Método:</b> Automático<br>
-                <b>Tempo aproximado de duração da rotina:</b> <12h<br>
+                <b>Método:</b> Automático/Mabual<br>
+                <b>Tempo aproximado de duração da rotina:</b> Indeterminado<br>
                 <b>Número de cópias mantidas:</b> 1<br>
                 <b>Frequência de conferência manual:</b> Diariamente
             ');
-            $this->mensagemAlt = utf8_decode('CONFERIR BACKUP - Arquivos APD "Sala de Som" - (comunhao-121)'); 
+            $this->mensagemAlt = utf8_decode('CONFERIR BACKUP - Arquivos APD "Sala de Som" - Servidor 17'); 
             
             return $this->enviaMensagem();
         }
@@ -486,7 +486,7 @@
                 <b>Número de cópias mantidas:</b> 1<br>
                 <b>Frequência de conferência manual:</b> Semanalmente (Segunda, Quarta e Sexta)
             ');
-            return $this->enviaMensagem();
+        return $this->enviaMensagem();
         }
         // private function patrimonioApache(){
         //     $this->assunto = utf8_decode('CONFERIR BACKUP - Apache "Patrimônio" - (serv08)');
