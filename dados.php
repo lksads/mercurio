@@ -343,7 +343,22 @@
 
         private function comunhao21CF(){
             $this->assunto = utf8_decode('CONFERIR BACKUP - Comunhao21 Código Fonte - (serv05)');
-            $this->mensagem = utf8_decode('<b>BACKUP:</b> Comunhao21');
+            $this->mensagem = utf8_decode('
+            <b>BACKUP:</b> Comunhao21<br>
+            <b>Origem física:</b> Servidor externo da empresa P21<br>
+            <b>Orígem lógica:</b> sftp://@comunhaoweb.com.br<br>
+            <b>Destino físico:</b> Servidor (serv05)<br>
+            <b>Destino lógico:</b> "C:\comunhaoweb\intranet\DUMP_P21\source"<br>
+            <b>Tipo:</b> Completo<br>
+            <b>Frequência:</b> Diariamente<br>
+            <b>Início da rotina:</b> 4h<br>
+            <b>Ferramenta:</b> pega_dump_serv05.bat<br>
+            Caminho da <b>Ferramenta:</b> "C:\comunhaoweb\intranet\DUMP_P21\pega_dump_serv05.bat"<br>
+            <b>Método:</b> AutomáticoProcedimentos para cópias de segurança (Backup) <br>
+            5 / 14<br>
+            <b>Tempo aproximado de duração da rotina:</b> 5m<br>
+            <b>Número de cópias mantidas:</b> 3 (Exclusão Manual)<br>
+            <b>Frequência de conferência manual:</b> Diariamente');
             $this->mensagemAlt = utf8_decode('CONFERIR BACKUP - Comunhao21 - (serv05)'); 
             
             return $this->enviaMensagem();
