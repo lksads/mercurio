@@ -51,14 +51,16 @@
             
             return $this->enviaMensagem();
         }
-        private function mensagemMoises(){
+        /*
+            private function mensagemMoises(){
             $this->nomeDestinatario = utf8_decode(' MOISES SHALOM ');
             $this->assunto = utf8_decode('MOISES SHALOM - Planejamento diário');
             $this->mensagem = utf8_decode('Consultar Agenda, Emails, Tickets e Whatsapp da ATI');
             $this->mensagemAlt = utf8_decode('Consultar Agenda, Emails, Tickets e Whatsapp da ATI');
-            
+         
             return $this->enviaMensagem();
         }
+        */   
         private function mensagemHumberto(){
             $this->nomeDestinatario = utf8_decode('HUMBERTO JUNIOR');
             $this->assunto = utf8_decode('HUMBERTO JUNIOR - Planejamento diário');
@@ -790,7 +792,7 @@
 
         function mensagemPrivada(){
             $this->mensagemMathias();
-            $this->mensagemMoises();
+            //$this->mensagemMoises();
             $this->mensagemHumberto();
         }
 
