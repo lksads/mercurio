@@ -69,6 +69,14 @@
             
             return $this->enviaMensagem();
         }
+        private function mensagemNathan(){
+            $this->nomeDestinatario = utf8_decode('NATHAN OLIVEIRA');
+            $this->assunto = utf8_decode('NATHAN OLIVEIRA - Planejamento diário');
+            $this->mensagem = utf8_decode('Consultar Agenda, Emails, Tickets e Whatsapp da ATI');
+            $this->mensagemAlt = utf8_decode('Consultar Agenda, Emails, Tickets e Whatsapp da ATI');
+            
+            return $this->enviaMensagem();
+        }
 
         private function reuniaoATI(){
             $this->assunto = utf8_decode('Reunião semanal da ATI');
@@ -794,6 +802,7 @@
             $this->mensagemMathias();
             //$this->mensagemMoises();
             $this->mensagemHumberto();
+            $this->mensagemNathan();
         }
 
         function segunda(){
