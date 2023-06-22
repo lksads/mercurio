@@ -113,7 +113,7 @@
             return $this->enviaMensagem();
         }
 
-        private function arquivosAPD(){
+        /*private function arquivosAPD(){
             $this->assunto = utf8_decode('CONFERIR BACKUP - Arquivos APD - (serv02)');
             $this->mensagem = utf8_decode('
                 <b>BACKUP:</b> Arquivos APD<br>
@@ -134,7 +134,7 @@
             
             return $this->enviaMensagem();
         }
-
+        */
         private function arquivosAPDSalaSom(){
             $this->assunto = utf8_decode('CONFERIR BACKUP - Arquivos APD "Sala de Som" - Servidor 17');
             $this->mensagem = utf8_decode('
@@ -821,7 +821,7 @@
             $this->patrimonioCF();
             $this->patrimonioBD();
             // $this->patrimonioApache();
-            $this->arquivosAPD();
+            //$this->arquivosAPD();
             $this->arquivosAPDSalaSom();
             $this->bancoShop9();
             $this->arquivosGeraisServ06();
@@ -844,7 +844,7 @@
         }
 
         function quinta(){
-            $this->arquivosAPD();
+            //$this->arquivosAPD();
             $this->arquivosAPDSalaSom();
             $this->relogioDePonto();
             $this->bancoShop9();
