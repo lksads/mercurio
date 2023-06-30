@@ -244,7 +244,7 @@
             
             return $this->enviaMensagem();
         }
-      /*  private function IntranetBk(){
+       private function IntranetBk(){
             $this->assunto = utf8_decode('CONFERIR BACKUP - Banco de Dados "Intranet" - (serv05)');
             $this->mensagem = utf8_decode('
                 <b>BACKUP:</b> Intranet Banco de Dados - (serv05)<br>
@@ -265,7 +265,7 @@
             $this->mensagemAlt = utf8_decode('CONFERIR BACKUP - Banco de Dados "Intranet" - (serv05)');
             
             return $this->enviaMensagem();
-        }*/
+        }
         private function serv01(){
             $this->assunto = utf8_decode('CONFERIR BACKUP - Sophos - (serv02)');
             $this->mensagem = utf8_decode('
@@ -808,9 +808,9 @@
         function segunda(){
             $this->arquivosGerais();
             $this->intranetCF();
-            //$this->intranetBk();
+            $this->intranetBk();
             $this->comunhao21CF();
-            $this->comunhao21BK();
+            //$this->comunhao21BK();
             $this->bancoShop9Bs9();
             $this->bancoShop9BAK();
             $this->bancoShopIntranet();
@@ -832,10 +832,10 @@
             $this->pomadaCF();
             $this->pomadaBK();
             $this->intranetCF();
-            //$this->intranetBk();
+            $this->intranetBk();
             $this->arquivosGerais();
             $this->comunhao21CF();
-            $this->comunhao21BK();
+            //$this->comunhao21BK();
             $this->bancoShop9Bs9();
             $this->bancoShop9BAK();
             $this->bancoShopIntranet();
@@ -858,7 +858,7 @@
             $this->pomadaCF();
             $this->pomadaBK();
             $this->comunhao21CF();
-            $this->comunhao21BK();
+            //$this->comunhao21BK();
             $this->bancoShop9Bs9();
             $this->bancoShop9BAK();
             $this->bancoShopIntranet();
