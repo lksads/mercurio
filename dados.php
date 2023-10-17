@@ -43,27 +43,51 @@
             $this->nomeRemetente = utf8_decode('Assessoria de Tecnologia da Informação - ATI');
         }
 
-        private function mensagemLucas(){
-            $this->nomeDestinatario = utf8_decode('LUCAS ALVES');
-            $this->assunto = utf8_decode('LUCAS ALVES - Planejamento diário');
+        private function mensagemMathias(){
+            $this->nomeDestinatario = utf8_decode('MATHIAS COLETTI');
+            $this->assunto = utf8_decode('MATHIAS COLETTI - Planejamento diário');
             $this->mensagem = utf8_decode('Consultar Agenda, Emails, Tickets e Whatsapp da ATI');
             $this->mensagemAlt = utf8_decode('Consultar Agenda, Emails, Tickets e Whatsapp da ATI');
             
             return $this->enviaMensagem();
         }
-        
-        private function mensagemVinicius(){
-            $this->nomeDestinatario = utf8_decode('LUCAS VINÍCIUS COSTA'); 
-            $this->assunto = utf8_decode('LUCAS VINÍCIUS COSTA - Planejamento diário');
+        /*
+            private function mensagemMoises(){
+            $this->nomeDestinatario = utf8_decode(' MOISES SHALOM ');
+            $this->assunto = utf8_decode('MOISES SHALOM - Planejamento diário');
             $this->mensagem = utf8_decode('Consultar Agenda, Emails, Tickets e Whatsapp da ATI');
-            $this->mensagemAlt = utf8_decode('Consultar Agenda, Emails, Tickets e Whatsapp da ATI');   
-
+            $this->mensagemAlt = utf8_decode('Consultar Agenda, Emails, Tickets e Whatsapp da ATI');
+         
             return $this->enviaMensagem();
         }
-
-        private function mensagemMathias(){
-            $this->nomeDestinatario = utf8_decode('MATHIAS COLETTI');
-            $this->assunto = utf8_decode('MATHIAS COLETTI - Planejamento diário');
+        */
+         private function mensagemAlexandre(){
+            $this->nomeDestinatario = utf8_decode('Alexandre Dias');
+            $this->assunto = utf8_decode('ALEXANDRE DIAS - Planejamento diário');
+            $this->mensagem = utf8_decode('Consultar Agenda, Emails, Tickets e Whatsapp da ATI');
+            $this->mensagemAlt = utf8_decode('Consultar Agenda, Emails, Tickets e Whatsapp da ATI');
+            
+            return $this->enviaMensagem();
+        }  
+        private function mensagemHumberto(){
+            $this->nomeDestinatario = utf8_decode('HUMBERTO JUNIOR');
+            $this->assunto = utf8_decode('HUMBERTO JUNIOR - Planejamento diário');
+            $this->mensagem = utf8_decode('Consultar Agenda, Emails, Tickets e Whatsapp da ATI');
+            $this->mensagemAlt = utf8_decode('Consultar Agenda, Emails, Tickets e Whatsapp da ATI');
+            
+            return $this->enviaMensagem();
+        }
+        private function mensagemNathan(){
+            $this->nomeDestinatario = utf8_decode('NATHAN OLIVEIRA');
+            $this->assunto = utf8_decode('NATHAN OLIVEIRA - Planejamento diário');
+            $this->mensagem = utf8_decode('Consultar Agenda, Emails, Tickets e Whatsapp da ATI');
+            $this->mensagemAlt = utf8_decode('Consultar Agenda, Emails, Tickets e Whatsapp da ATI');
+            
+            return $this->enviaMensagem();
+        }
+        private function mensagemDavid(){
+            $this->nomeDestinatario = utf8_decode('DAVID DA SILVA');
+            $this->assunto = utf8_decode('DAVID DA SILVA - Planejamento diário');
             $this->mensagem = utf8_decode('Consultar Agenda, Emails, Tickets e Whatsapp da ATI');
             $this->mensagemAlt = utf8_decode('Consultar Agenda, Emails, Tickets e Whatsapp da ATI');
             
@@ -87,8 +111,8 @@
         private function bancoDoBrasil(){
             $this->assunto = utf8_decode('CONFERIR BACKUP - Banco do Brasil - (serv00)');
             $this->mensagem = utf8_decode('
-                <b>BACKUP:</b> Banco do Brasil - (comunhao-152)<br>
-                <b>Origem física:</b> comunhao-152<br>
+                <b>BACKUP:</b> Banco do Brasil - (comunhao-312)<br>
+                <b>Origem física:</b> comunhao-312<br>
                 <b>Orígem lógica:</b> "C:\bancodobrasil"<br>
                 <b>Destino físico:</b> Servidor (serv00)<br>
                 <b>Destino lógico:</b> "D:\Rede\DAF\BACKUP-BANCODOBRASIL"<br>
@@ -97,7 +121,7 @@
                 <b>Ferramenta:</b> Cobian Backup<br>
                 <b>Método:</b> Automático<br>
                 <b>Tempo aproximado de duração da rotina:</b> 5m<br>
-                <b>Número de cópias mantidas:</b> 3<br>
+                <b>Número de cópias mantidas:</b> 3 <br>
                 <b>Frequência de conferência manual:</b> Semanalmente (Segunda, Quarta e Sexta)
             ');
             $this->mensagemAlt = utf8_decode('CONFERIR BACKUP - Banco do Brasil - (comunhao-152)');    
@@ -105,7 +129,7 @@
             return $this->enviaMensagem();
         }
 
-        private function arquivosAPD(){
+        /*private function arquivosAPD(){
             $this->assunto = utf8_decode('CONFERIR BACKUP - Arquivos APD - (serv02)');
             $this->mensagem = utf8_decode('
                 <b>BACKUP:</b> Arquivos APD<br>
@@ -126,25 +150,25 @@
             
             return $this->enviaMensagem();
         }
-
+        */
         private function arquivosAPDSalaSom(){
-            $this->assunto = utf8_decode('CONFERIR BACKUP - Arquivos APD "Sala de Som" - (comunhao-121)');
+            $this->assunto = utf8_decode('CONFERIR BACKUP - Arquivos APD "Sala de Som" - Servidor 17');
             $this->mensagem = utf8_decode('
                 <b>BACKUP:</b> Arquivos APD "Sala de Som" - (comunhao-121)<br>
                 <b>Origem física:</b> Servidor (comunhao-121)<br>
                 <b>Orígem lógica:</b> "E:\ADR"<br>
-                <b>Destino físico:</b> Servidor (comunhao-121)<br>
-                <b>Destino lógico:</b> "D:\BACKUP\ADR"<br>
+                <b>Destino físico:</b> Servidor 17<br>
+                <b>Destino lógico:</b> "G:\"<br>
                 <b>Tipo:</b> Completo<br>
-                <b>Frequência:</b> Diariamente<br>
+                <b>Frequência:</b> Dividido em partes diariamente<br>
                 <b>Início da rotina:</b> 22h30<br>
                 <b>Ferramenta:</b> Cobian Backup<br>
-                <b>Método:</b> Automático<br>
-                <b>Tempo aproximado de duração da rotina:</b> <12h<br>
+                <b>Método:</b> Automático/Mabual<br>
+                <b>Tempo aproximado de duração da rotina:</b> Indeterminado<br>
                 <b>Número de cópias mantidas:</b> 1<br>
                 <b>Frequência de conferência manual:</b> Diariamente
             ');
-            $this->mensagemAlt = utf8_decode('CONFERIR BACKUP - Arquivos APD "Sala de Som" - (comunhao-121)'); 
+            $this->mensagemAlt = utf8_decode('CONFERIR BACKUP - Arquivos APD "Sala de Som" - Servidor 17'); 
             
             return $this->enviaMensagem();
         }
@@ -197,8 +221,11 @@
                 <b>BACKUP:</b> Arquivos Gerais<br>
                 <b>Origem física:</b> Servidor (serv00)<br>
                 <b>Orígem lógica:</b> "D:\Rede"<br>
-                <b>Destino físico:</b> Servidor (serv00)<br>
-                <b>Destino lógico:</b> "E:\bkp_arquivo\backup_rede"<br>
+                <b>Destino físico:</b> Servidor 12<br>
+                <b>Destino lógico:</b> "D:\"<br>
+                "E:\"<br>
+                "F:\"<br>
+                "G:\"<br>
                 <b>Tipo:</b> Completo<br>
                 <b>Frequência:</b> Diariamente<br>
                 <b>Início da rotina:</b> 23h50<br>
@@ -233,7 +260,7 @@
             
             return $this->enviaMensagem();
         }
-        private function IntranetBk(){
+       private function IntranetBk(){
             $this->assunto = utf8_decode('CONFERIR BACKUP - Banco de Dados "Intranet" - (serv05)');
             $this->mensagem = utf8_decode('
                 <b>BACKUP:</b> Intranet Banco de Dados - (serv05)<br>
@@ -276,7 +303,7 @@
             
             return $this->enviaMensagem();
         }
-        private function serv07(){
+        /*private function serv07(){
             $this->assunto = utf8_decode('CONFERIR BACKUP - Sophos - (serv02)');
             $this->mensagem = utf8_decode('
                 <b>BACKUP:</b> Sophos - (serv07)<br>
@@ -296,7 +323,7 @@
             $this->mensagemAlt = utf8_decode('CONFERIR BACKUP - Sophos - (serv07)');    
             
             return $this->enviaMensagem();
-        }
+        }*/
         private function pomadaCF(){
             $this->assunto = utf8_decode('CONFERIR BACKUP - Pomada Código Fonte - (serv02)');
             $this->mensagem = utf8_decode('
@@ -342,7 +369,22 @@
 
         private function comunhao21CF(){
             $this->assunto = utf8_decode('CONFERIR BACKUP - Comunhao21 Código Fonte - (serv05)');
-            $this->mensagem = utf8_decode('<b>BACKUP:</b> Comunhao21');
+            $this->mensagem = utf8_decode('
+            <b>BACKUP:</b> Comunhao21<br>
+            <b>Origem física:</b> Servidor externo da empresa P21<br>
+            <b>Orígem lógica:</b> sftp://@comunhaoweb.com.br<br>
+            <b>Destino físico:</b> Servidor (serv05)<br>
+            <b>Destino lógico:</b> "C:\comunhaoweb\intranet\DUMP_P21\source"<br>
+            <b>Tipo:</b> Completo<br>
+            <b>Frequência:</b> Diariamente<br>
+            <b>Início da rotina:</b> 4h<br>
+            <b>Ferramenta:</b> pega_dump_serv05.bat<br>
+            Caminho da <b>Ferramenta:</b> "C:\comunhaoweb\intranet\DUMP_P21\pega_dump_serv05.bat"<br>
+            <b>Método:</b> AutomáticoProcedimentos para cópias de segurança (Backup) <br>
+            5 / 14<br>
+            <b>Tempo aproximado de duração da rotina:</b> 5m<br>
+            <b>Número de cópias mantidas:</b> 3 (Exclusão Manual)<br>
+            <b>Frequência de conferência manual:</b> Diariamente');
             $this->mensagemAlt = utf8_decode('CONFERIR BACKUP - Comunhao21 - (serv05)'); 
             
             return $this->enviaMensagem();
@@ -479,6 +521,25 @@
             
             return $this->enviaMensagem();
         }
+        private function backupDAC(){
+            $this->assunto = utf8_decode('CONFERIR BACKUP DADOS - DAC  (comunhao-22)');
+            $this->mensagem = utf8_decode('
+                <b>BACKUP:</b> BACKUP DADOS - DAC  (comunhao-22)<br>
+                <b>Origem física:</b> comunhao-22<br>
+                <b>Orígem lógica:</b> D:\<br>
+                <b>Destino físico:</b> comunhao-22<br>
+                <b>Destino lógico:</b> "E:\"<br>
+                <b>Tipo:</b> Comgremental<br>
+                <b>Frequência:</b> Semanalmente (Segunda, Quarta e Sexta)<br>
+                <b>Início da rotina:</b> 3:00h<br>
+                <b>Ferramenta:</b> Cobian<br>
+                <b>Método:</b> Automatico<br>
+                <b>Tempo aproximado de duração da rotina:</b> 1hora<br>
+                <b>Número de cópias mantidas:</b> 1<br>
+                <b>Frequência de conferência manual:</b> Semanalmente (Segunda, Quarta e Sexta)
+            ');
+        return $this->enviaMensagem();
+        }
         // private function patrimonioApache(){
         //     $this->assunto = utf8_decode('CONFERIR BACKUP - Apache "Patrimônio" - (serv08)');
         //     $this->mensagem = utf8_decode('
@@ -551,27 +612,27 @@
             
             return $this->enviaMensagem();
         }
-        private function arquivosGTV(){
-            $this->assunto = utf8_decode('CONFERIR BACKUP - Arquivos GTV - (serv02)');
-            $this->mensagem = utf8_decode('
-                <b>BACKUP:</b> Arquivos GTV - (serv02)<br>
-                <b>Origem física:</b> Servidor (serv02)<br>
-                <b>Orígem lógica:</b> "F:\Rede\GTV"<br>
-                <b>Destino físico:</b> Servidor (serv02)<br>
-                <b>Destino lógico:</b> "G:\Backup GTV - Full"<br>
-                <b>Tipo:</b> Completo<br>
-                <b>Frequência:</b> Diariamente<br>
-                <b>Início da rotina:</b> 4h<br>
-                <b>Ferramenta:</b> Cobian Backup<br>
-                <b>Método:</b> Automático<br>
-                <b>Tempo aproximado de duração da rotina:</b> 25m<br>
-                <b>Número de cópias mantidas:</b> 2<br>
-                <b>Frequência de conferência manual:</b> Diariamente
-            ');
-            $this->mensagemAlt = utf8_decode('CONFERIR BACKUP - Arquivos GTV - (serv02)');    
-            
-            return $this->enviaMensagem();
-        }
+        //private function arquivosGTV(){
+        //    $this->assunto = utf8_decode('CONFERIR BACKUP - Arquivos GTV - (serv02)');
+        //    $this->mensagem = utf8_decode('
+        //        <b>BACKUP:</b> Arquivos GTV - (serv02)<br>
+        //       <b>Origem física:</b> Servidor (serv02)<br>
+        //        <b>Orígem lógica:</b> "F:\Rede\GTV"<br>
+        //        <b>Destino físico:</b> Servidor (serv02)<br>
+        //        <b>Destino lógico:</b> "G:\Backup GTV - Full"<br>
+        //        <b>Tipo:</b> Completo<br>
+        //        <b>Frequência:</b> Diariamente<br>
+        //        <b>Início da rotina:</b> 4h<br>
+        //        <b>Ferramenta:</b> Cobian Backup<br>
+        //        <b>Método:</b> Automático<br>
+        //        <b>Tempo aproximado de duração da rotina:</b> 25m<br>
+        //        <b>Número de cópias mantidas:</b> 2<br>
+        //        <b>Frequência de conferência manual:</b> Diariamente
+        //    ');
+        //    $this->mensagemAlt = utf8_decode('CONFERIR BACKUP - Arquivos GTV - (serv02)');    
+        //    
+        //    return $this->enviaMensagem();
+        //}
         private function arquivosATI(){
             $this->assunto = utf8_decode('CONFERIR BACKUP - Arquivos ATI - (serv02)');
             $this->mensagem = utf8_decode('
@@ -714,6 +775,7 @@
             $correio->Subject = $this->assunto;
             $correio->Body    = $this->mensagem;
             $correio->AltBody = $this->mensagemAlt;
+            
             // $correio->addReplyTo('no-reply@email.com.br');
             // $correio->addAddress('email@email.com.br', ‘Nome’);
             // $correio->addCC('email@email.com.br', 'Cópia');
@@ -753,12 +815,11 @@
         }
 
         function mensagemPrivada(){
-            $this->mensagemLucas();
             $this->mensagemMathias();
-            
-            if(date('j') != 1 && date('j') != 6){
-                $this->mensagemVinicius();
-            }            
+            $this->mensagemAlexandre();
+            $this->mensagemHumberto();
+            $this->mensagemNathan();
+            $this->mensagemDavid();
         }
 
         function segunda(){
@@ -766,17 +827,18 @@
             $this->intranetCF();
             $this->intranetBk();
             $this->comunhao21CF();
-            $this->comunhao21BK();
+            //$this->comunhao21BK();
             $this->bancoShop9Bs9();
             $this->bancoShop9BAK();
             $this->bancoShopIntranet();
+            $this->backupDAC();
         }
 
         function terca(){
             $this->patrimonioCF();
             $this->patrimonioBD();
             // $this->patrimonioApache();
-            $this->arquivosAPD();
+            //$this->arquivosAPD();
             $this->arquivosAPDSalaSom();
             $this->bancoShop9();
             $this->arquivosGeraisServ06();
@@ -790,15 +852,16 @@
             $this->intranetBk();
             $this->arquivosGerais();
             $this->comunhao21CF();
-            $this->comunhao21BK();
+            //$this->comunhao21BK();
             $this->bancoShop9Bs9();
             $this->bancoShop9BAK();
             $this->bancoShopIntranet();
             $this->coletaDoacaoAlmox();
+            $this->backupDAC();
         }
 
         function quinta(){
-            $this->arquivosAPD();
+            //$this->arquivosAPD();
             $this->arquivosAPDSalaSom();
             $this->relogioDePonto();
             $this->bancoShop9();
@@ -808,14 +871,15 @@
         function sexta(){
             $this->arquivosGerais();
             $this->serv01();
-            $this->serv07();
+            //$this->serv07();
             $this->pomadaCF();
             $this->pomadaBK();
             $this->comunhao21CF();
-            $this->comunhao21BK();
+            //$this->comunhao21BK();
             $this->bancoShop9Bs9();
             $this->bancoShop9BAK();
             $this->bancoShopIntranet();
+            $this->backupDAC();
         }
 
         function sabado(){
@@ -827,70 +891,70 @@
         function janeiro(){
             $this->imgSOServ00();
             $this->imgActiveServ00();
-            $this->arquivosGTV(); 
+            //$this->arquivosGTV(); 
             $this->arquivosATI();
         }
         function fevereiro(){
             $this->imgActiveServ06();
             $this->imgSOServ06();
-            $this->arquivosGTV();
+            //$this->arquivosGTV();
             $this->arquivosATI();
         }
         function marco(){
             $this->imgAcronisServ05();
             $this->imgAcronisServ03();
-            $this->arquivosGTV();
+            //$this->arquivosGTV();
             $this->arquivosATI();
         }
         function abril(){
             $this->imgAcronisServ02();
-            $this->arquivosGTV();
+            //$this->arquivosGTV();
             $this->arquivosATI();
         }
         function maio(){
             $this->imgSOServ00();
             $this->imgActiveServ00();
-            $this->arquivosGTV(); 
+            //$this->arquivosGTV(); 
             $this->arquivosATI();   
         }
         function junho(){
             $this->imgActiveServ06();
             $this->imgSOServ06();
-            $this->arquivosGTV();
+           // $this->arquivosGTV();
             $this->arquivosATI();
         }
         function julho(){
             $this->imgAcronisServ05();
             $this->imgAcronisServ03();
-            $this->arquivosGTV();
+           // $this->arquivosGTV();
             $this->arquivosATI();
         }
         function agosto(){
             $this->imgAcronisServ02();
-            $this->arquivosGTV();
+            //$this->arquivosGTV();
             $this->arquivosATI();
         }
         function setembro(){
             $this->imgSOServ00();
             $this->imgActiveServ00();
-            $this->arquivosGTV(); 
+            //$this->arquivosGTV(); 
             $this->arquivosATI();
         }
         function outubro(){
             $this->imgActiveServ06();
             $this->imgSOServ06();
-            $this->arquivosGTV();
+            //$this->arquivosGTV();
             $this->arquivosATI();
         }
         function novembro(){
             $this->imgAcronisServ05();
             $this->imgAcronisServ03();
-            $this->arquivosGTV();
+            //$this->arquivosGTV();
             $this->arquivosATI();
         }
         function dezembro(){
             $this->imgAcronisServ02();
-            $this->arquivosGTV();
+            //$this->arquivosGTV();
             $this->arquivosATI();
         }
     }
