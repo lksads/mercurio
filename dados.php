@@ -152,25 +152,88 @@
             return $this->enviaMensagem();
         }
         */
-        private function arquivosAPDSalaSom(){
-            $this->assunto = utf8_decode('CONFERIR BACKUP - Arquivos APD "Sala de Som" - Servidor 17');
+        private function arquivosProducao(){
+            $this->assunto = utf8_decode('CONFERIR BACKUP - PRODUCAO - Servidor 17');
             $this->mensagem = utf8_decode('
-                <b>BACKUP:</b> Arquivos APD "Sala de Som" - (comunhao-121)<br>
-                <b>Origem física:</b> Servidor (comunhao-121)<br>
-                <b>Orígem lógica:</b> "E:\ADR"<br>
+                <b>BACKUP:</b> CONFERIR BACKUP - PRODUCAO - Servidor 17<br>
+                <b>Origem física:</b> Servidor 18<br>
+                <b>Orígem lógica:</b> "U:\"<br>
                 <b>Destino físico:</b> Servidor 17<br>
                 <b>Destino lógico:</b> "G:\"<br>
                 <b>Tipo:</b> Completo<br>
-                <b>Frequência:</b> Dividido em partes diariamente<br>
-                <b>Início da rotina:</b> 22h30<br>
-                <b>Ferramenta:</b> Cobian Backup<br>
-                <b>Método:</b> Automático/Mabual<br>
+                <b>Frequência:</b> Diariamente<br>
+                <b>Início da rotina:</b> Tempo Todo<br>
+                <b>Ferramenta:</b> Backup Windows Server<br>
+                <b>Método:</b>Automatico<br>
                 <b>Tempo aproximado de duração da rotina:</b> Indeterminado<br>
                 <b>Número de cópias mantidas:</b> 1<br>
                 <b>Frequência de conferência manual:</b> Diariamente
             ');
-            $this->mensagemAlt = utf8_decode('CONFERIR BACKUP - Arquivos APD "Sala de Som" - Servidor 17'); 
+            $this->mensagemAlt = utf8_decode('CONFERIR BACKUP - PRODUCAO - Servidor 17');
             
+            return $this->enviaMensagem();
+        }
+        private function arquivosTVCOMUNHAO(){
+            $this->assunto = utf8_decode('CONFERIR BACKUP - TV COMUNHAO - Servidor 17');
+            $this->mensagem = utf8_decode('
+                <b>BACKUP:</b> CONFERIR BACKUP - TV COMUNHAO - Servidor 17<br>
+                <b>Origem física:</b> Servidor 18<br>
+                <b>Orígem lógica:</b> "W:\"<br>
+                <b>Destino físico:</b> Servidor 17<br>
+                <b>Destino lógico:</b> "D:\"<br>
+                <b>Tipo:</b> Completo<br>
+                <b>Frequência:</b> Diariamente<br>
+                <b>Início da rotina:</b> Tempo Todo<br>
+                <b>Ferramenta:</b> Backup Windows Server<br>
+                <b>Método:</b>Automatico<br>
+                <b>Tempo aproximado de duração da rotina:</b> Indeterminado<br>
+                <b>Número de cópias mantidas:</b> 1<br>
+                <b>Frequência de conferência manual:</b> Diariamente
+            ');
+            $this->mensagemAlt = utf8_decode('CONFERIR BACKUP - TV COMUNHAO - Servidor 17');
+
+            return $this->enviaMensagem();
+        }
+        private function arquivos24(){
+            $this->assunto = utf8_decode('CONFERIR BACKUP - TV 24 HORAS - Servidor 17');
+            $this->mensagem = utf8_decode('
+                <b>BACKUP:</b> CONFERIR BACKUP - TV 24 HORAS - Servidor 17<br>
+                <b>Origem física:</b> Servidor 18<br>
+                <b>Orígem lógica:</b> "Y:\"<br>
+                <b>Destino físico:</b> Servidor 17<br>
+                <b>Destino lógico:</b> "F:\"<br>
+                <b>Tipo:</b> Completo<br>
+                <b>Frequência:</b> Diariamente<br>
+                <b>Início da rotina:</b> Tempo Todo<br>
+                <b>Ferramenta:</b> Backup Windows Server<br>
+                <b>Método:</b>Automatico<br>
+                <b>Tempo aproximado de duração da rotina:</b> Indeterminado<br>
+                <b>Número de cópias mantidas:</b> 1<br>
+                <b>Frequência de conferência manual:</b> Diariamente
+            ');
+            $this->mensagemAlt = utf8_decode('CONFERIR BACKUP - TV 24 HORAS - Servidor 17');
+
+            return $this->enviaMensagem();
+        }
+        private function arquivosACE(){
+            $this->assunto = utf8_decode('CONFERIR BACKUP - DADOS ACE - Servidor 17');
+            $this->mensagem = utf8_decode('
+                <b>BACKUP:</b>CONFERIR BACKUP - DADOS ACE - Servidor 17<br>
+                <b>Origem física:</b> Servidor 18<br>
+                <b>Orígem lógica:</b> "X:\"<br>
+                <b>Destino físico:</b> Servidor 17<br>
+                <b>Destino lógico:</b> "E:\"<br>
+                <b>Tipo:</b> Completo<br>
+                <b>Frequência:</b> Diariamente<br>
+                <b>Início da rotina:</b> Tempo Todo<br>
+                <b>Ferramenta:</b> Backup Windows Server<br>
+                <b>Método:</b>Automatico<br>
+                <b>Tempo aproximado de duração da rotina:</b> Indeterminado<br>
+                <b>Número de cópias mantidas:</b> 1<br>
+                <b>Frequência de conferência manual:</b> Diariamente
+            ');
+            $this->mensagemAlt = utf8_decode('CONFERIR BACKUP - DADOS ACE - Servidor 17');
+
             return $this->enviaMensagem();
         }
 
@@ -238,6 +301,27 @@
             ');
             $this->mensagemAlt = utf8_decode('CONFERIR BACKUP - Arquivos Gerais - (serv00)');    
             
+            return $this->enviaMensagem();
+        }
+        private function arquivosGeraisserv16(){
+            $this->assunto = utf8_decode('CONFERIR BACKUP - Arquivos Gerais - (serv16)');
+            $this->mensagem = utf8_decode('
+                <b>BACKUP:</b> Arquivos Gerais<br>
+                <b>Origem física:</b> Servidor (serv00)<br>
+                <b>Orígem lógica:</b> "D:\Rede"<br>
+                <b>Destino físico:</b> Servidor 16<br>
+                <b>Destino lógico:</b> "E:\"<br>
+                <b>Tipo:</b> Completo<br>
+                <b>Frequência:</b> Diariamente<br>
+                <b>Início da rotina:</b> 23h50<br>
+                <b>Ferramenta:</b> Cobian Backup<br>
+                <b>Método:</b> Automático<br>
+                <b>Tempo aproximado de duração da rotina:</b> 7h<br>
+                <b>Número de cópias mantidas:</b> 3<br>
+                <b>Frequência de conferência manual:</b> Diariamente
+            ');
+            $this->mensagemAlt = utf8_decode('CONFERIR BACKUP - Arquivos Gerais - (serv16)');
+
             return $this->enviaMensagem();
         }
         private function IntranetCF(){
@@ -391,7 +475,7 @@
             return $this->enviaMensagem();
         }
 
-        private function comunhao21BK(){
+        /*private function comunhao21BK(){
             $this->assunto = utf8_decode('CONFERIR BACKUP - Comunhao21 Banco de Dados - (serv05)');
             $this->mensagem = utf8_decode('
                 <b>BACKUP:</b> Comunhao21<br>
@@ -414,7 +498,7 @@
             
             return $this->enviaMensagem();
         }
-
+    */
         private function bancoShop9Bs9(){
             $this->assunto = utf8_decode('CONFERIR BACKUP - Banco Shop 9 BS9 - (serv03)');
             $this->mensagem = utf8_decode('
@@ -523,13 +607,13 @@
             return $this->enviaMensagem();
         }
         private function backupDAC(){
-            $this->assunto = utf8_decode('CONFERIR BACKUP DADOS - DAC  (comunhao-22)');
+            $this->assunto = utf8_decode('CONFERIR BACKUP DADOS - DAC  (comunhao-300)');
             $this->mensagem = utf8_decode('
-                <b>BACKUP:</b> BACKUP DADOS - DAC  (comunhao-22)<br>
-                <b>Origem física:</b> comunhao-22<br>
+                <b>BACKUP:</b> BACKUP DADOS - DAC  (comunhao-300)<br>
+                <b>Origem física:</b> comunhao-300<br>
                 <b>Orígem lógica:</b> D:\<br>
-                <b>Destino físico:</b> comunhao-22<br>
-                <b>Destino lógico:</b> "E:\"<br>
+                <b>Destino físico:</b> Servidor 11<br>
+                <b>Destino lógico:</b> "F:\DAC"<br>
                 <b>Tipo:</b> Comgremental<br>
                 <b>Frequência:</b> Semanalmente (Segunda, Quarta e Sexta)<br>
                 <b>Início da rotina:</b> 3:00h<br>
@@ -817,7 +901,7 @@
 
         function mensagemPrivada(){
             $this->mensagemMathias();
-            //$this->mensagemAlexandre();
+
             $this->mensagemHumberto();
             $this->mensagemNathan();
             $this->mensagemDavid();
@@ -828,7 +912,7 @@
             $this->intranetCF();
             $this->intranetBk();
             $this->comunhao21CF();
-            //$this->comunhao21BK();
+
             $this->bancoShop9Bs9();
             $this->bancoShop9BAK();
             $this->bancoShopIntranet();
@@ -839,10 +923,13 @@
             $this->patrimonioCF();
             $this->patrimonioBD();
             // $this->patrimonioApache();
-            //$this->arquivosAPD();
-            $this->arquivosAPDSalaSom();
+            $this->arquivosTVCOMUNHAO();
+            $this->arquivosProducao();
+            $this->arquivos24();
+            $this->arquivosACE();
             $this->bancoShop9();
             $this->arquivosGeraisServ06();
+            $this->arquivosGeraisserv16();
         }
 
         function quarta(){
@@ -863,10 +950,14 @@
 
         function quinta(){
             //$this->arquivosAPD();
-            $this->arquivosAPDSalaSom();
+            $this->arquivosProducao();
+            $this->arquivosTVCOMUNHAO();
+            $this->arquivos24();
+            $this->arquivosACE();
             $this->relogioDePonto();
             $this->bancoShop9();
-            $this->bancoDoBrasil(); 
+            $this->bancoDoBrasil();
+            $this->arquivosGeraisserv16();
         }
 
         function sexta(){
