@@ -5,6 +5,55 @@
       <sourceFolder url="file://$MODULE_DIR$/libr/src" isTestSource="false" packagePrefix="PHPMailer\PHPMailer\" />
       <sourceFolder url="file://$MODULE_DIR$/libr/test" isTestSource="true" packagePrefix="PHPMailer\Test\" />
       <sourceFolder url="file://$MODULE_DIR$/libr/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/libr/spec" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/libr/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/libr/vendor/doctrine/annotations" />
+      <excludeFolder url="file://$MODULE_DIR$/libr/vendor/doctrine/deprecations" />
+      <excludeFolder url="file://$MODULE_DIR$/libr/vendor/doctrine/instantiator" />
+      <excludeFolder url="file://$MODULE_DIR$/libr/vendor/doctrine/lexer" />
+      <excludeFolder url="file://$MODULE_DIR$/libr/vendor/friendsofphp/php-cs-fixer" />
+      <excludeFolder url="file://$MODULE_DIR$/libr/vendor/php-cs-fixer/diff" />
+      <excludeFolder url="file://$MODULE_DIR$/libr/vendor/phpdocumentor/reflection-docblock" />
+      <excludeFolder url="file://$MODULE_DIR$/libr/vendor/phpspec/prophecy" />
+      <excludeFolder url="file://$MODULE_DIR$/libr/vendor/phpunit/php-code-coverage" />
+      <excludeFolder url="file://$MODULE_DIR$/libr/vendor/phpunit/php-file-iterator" />
+      <excludeFolder url="file://$MODULE_DIR$/libr/vendor/phpunit/php-text-template" />
+      <excludeFolder url="file://$MODULE_DIR$/libr/vendor/phpunit/php-timer" />
+      <excludeFolder url="file://$MODULE_DIR$/libr/vendor/phpunit/php-token-stream" />
+      <excludeFolder url="file://$MODULE_DIR$/libr/vendor/phpunit/phpunit" />
+      <excludeFolder url="file://$MODULE_DIR$/libr/vendor/phpunit/phpunit-mock-objects" />
+      <excludeFolder url="file://$MODULE_DIR$/libr/vendor/psr/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/libr/vendor/psr/container" />
+      <excludeFolder url="file://$MODULE_DIR$/libr/vendor/psr/event-dispatcher" />
+      <excludeFolder url="file://$MODULE_DIR$/libr/vendor/psr/log" />
+      <excludeFolder url="file://$MODULE_DIR$/libr/vendor/sebastian/comparator" />
+      <excludeFolder url="file://$MODULE_DIR$/libr/vendor/sebastian/diff" />
+      <excludeFolder url="file://$MODULE_DIR$/libr/vendor/sebastian/environment" />
+      <excludeFolder url="file://$MODULE_DIR$/libr/vendor/sebastian/exporter" />
+      <excludeFolder url="file://$MODULE_DIR$/libr/vendor/sebastian/global-state" />
+      <excludeFolder url="file://$MODULE_DIR$/libr/vendor/sebastian/recursion-context" />
+      <excludeFolder url="file://$MODULE_DIR$/libr/vendor/sebastian/version" />
+      <excludeFolder url="file://$MODULE_DIR$/libr/vendor/symfony/console" />
+      <excludeFolder url="file://$MODULE_DIR$/libr/vendor/symfony/deprecation-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/libr/vendor/symfony/event-dispatcher" />
+      <excludeFolder url="file://$MODULE_DIR$/libr/vendor/symfony/event-dispatcher-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/libr/vendor/symfony/filesystem" />
+      <excludeFolder url="file://$MODULE_DIR$/libr/vendor/symfony/finder" />
+      <excludeFolder url="file://$MODULE_DIR$/libr/vendor/symfony/options-resolver" />
+      <excludeFolder url="file://$MODULE_DIR$/libr/vendor/symfony/polyfill-ctype" />
+      <excludeFolder url="file://$MODULE_DIR$/libr/vendor/symfony/polyfill-intl-grapheme" />
+      <excludeFolder url="file://$MODULE_DIR$/libr/vendor/symfony/polyfill-intl-normalizer" />
+      <excludeFolder url="file://$MODULE_DIR$/libr/vendor/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/libr/vendor/symfony/polyfill-php72" />
+      <excludeFolder url="file://$MODULE_DIR$/libr/vendor/symfony/polyfill-php73" />
+      <excludeFolder url="file://$MODULE_DIR$/libr/vendor/symfony/polyfill-php80" />
+      <excludeFolder url="file://$MODULE_DIR$/libr/vendor/symfony/process" />
+      <excludeFolder url="file://$MODULE_DIR$/libr/vendor/symfony/service-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/libr/vendor/symfony/stopwatch" />
+      <excludeFolder url="file://$MODULE_DIR$/libr/vendor/symfony/string" />
+      <excludeFolder url="file://$MODULE_DIR$/libr/vendor/symfony/yaml" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

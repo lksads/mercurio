@@ -10,9 +10,69 @@
     <option name="highlightLevel" value="WARNING" />
     <option name="transferred" value="true" />
   </component>
+  <component name="PhpCSFixer">
+    <phpcsfixer_settings>
+      <PhpCSFixerConfiguration tool_path="$PROJECT_DIR$/libr/vendor/bin/php-cs-fixer" />
+    </phpcsfixer_settings>
+  </component>
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/libr/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/libr/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/libr/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/libr/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/libr/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/libr/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/libr/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/libr/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/libr/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/libr/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/libr/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/libr/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/libr/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/libr/vendor/phpunit/phpunit-mock-objects" />
+      <path value="$PROJECT_DIR$/libr/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/libr/vendor/friendsofphp/php-cs-fixer" />
+      <path value="$PROJECT_DIR$/libr/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/libr/vendor/composer" />
+      <path value="$PROJECT_DIR$/libr/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/libr/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/libr/vendor/doctrine/deprecations" />
+      <path value="$PROJECT_DIR$/libr/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/libr/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/libr/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/libr/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/libr/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/libr/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/libr/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/libr/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/libr/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/libr/vendor/symfony/stopwatch" />
+      <path value="$PROJECT_DIR$/libr/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/libr/vendor/symfony/options-resolver" />
+      <path value="$PROJECT_DIR$/libr/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/libr/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/libr/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/libr/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/libr/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/libr/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/libr/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/libr/vendor/php-cs-fixer/diff" />
+      <path value="$PROJECT_DIR$/libr/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/libr/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/libr/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/libr/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/libr/vendor/symfony/service-contracts" />
+    </include_path>
+  </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="5.5.0" />
   <component name="PhpStanOptionsConfiguration">
     <option name="transferred" value="true" />
+  </component>
+  <component name="PhpUnit">
+    <phpunit_settings>
+      <PhpUnitSettings custom_loader_path="$PROJECT_DIR$/libr/vendor/autoload.php" />
+    </phpunit_settings>
   </component>
   <component name="PsalmOptionsConfiguration">
     <option name="transferred" value="true" />
